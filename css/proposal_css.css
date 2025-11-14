@@ -1,0 +1,160 @@
+.dad_proposal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 40px 60px 40px;
+    overflow: hidden;
+    background-color: #8b7078;
+}
+
+.dad_proposal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 40px 60px 40px;
+    overflow: hidden;
+    background-color: #8b7078;
+}
+
+.proposal {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    max-width: 1200px;
+    height: auto;
+    padding: 30px;
+}
+
+.left-proposal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    border-radius: 25px;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.chart-bars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    height: 300px;
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+.chart-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 3px;
+    position: relative;
+    padding: 10px 0;
+    color: #000;
+}
+
+.chart-column.forchics-col {
+    background-color: #f0b5b6;
+    height: 120px;
+}
+
+.chart-column.others-col {
+    background-color: #d196a2;
+    height: 250px;
+}
+
+.chart-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.chart-label1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.chart-price {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.chart-caption {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.right-proposal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding: 0 20px 0 40px;
+}
+
+.right-proposal h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.proposal-desc {
+    margin: 16px 0 50px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.try-now-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    min-height: 60px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #000;
+    border: 2px solid #000;
+    box-shadow: 0 4px 15px rgba(141, 131, 131, 0.4), 0 0 15px rgba(241, 192, 12, 0.6);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.try-now-btn .emoji {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.last-desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.last-desc p{
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}

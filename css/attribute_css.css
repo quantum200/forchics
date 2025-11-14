@@ -1,0 +1,202 @@
+.dad_attribute {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 0;
+    background: #ffe3ca;
+}
+
+.attribute {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.left-attribute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+    padding: 50px 40px 0;
+}
+
+.attribute-logo {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    color: black;
+}
+
+.attribute-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.right-attribute {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    flex-shrink: 0;
+    border-radius: 12px;
+    position: relative;
+    background: transparent;
+}
+
+.comparison-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 0;
+    min-height: 70px;
+    z-index: 2;
+    background-color: transparent;
+    margin-bottom: -10px;
+}
+
+.product-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    height: 160px;
+    z-index: 1;
+    padding: 0;
+}
+
+.product-col.product-forchics {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ff6c84;
+}
+
+.product-col.product-others {
+    background-color: #ffe3ca;
+}
+
+.product-col img {
+    width: 100px;
+    height: auto;
+    position: static;
+    margin-bottom: 5px;
+}
+
+.other-product{
+    height: 140px !important;
+    width: 50px !important;
+}
+
+.other-product1{
+    height: 180px !important;
+    width: 80px !important;
+}
+
+.product-label {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    color: black;
+}
+
+.product-label1 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.feature-label, .feature-label-first, .feature-label-third {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 20px 15px 30px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-color: #8b7078;
+    color: white;
+}
+
+.feature-label-first {
+    border-top-left-radius: 10px;
+}
+
+.feature-label-third {
+    border-bottom-left-radius: 10px;
+    border-bottom: none;
+}
+
+.feature-label-second, .feature-label-fourth {
+    padding: 15px 20px 15px 30px;
+    display: flex;
+    background-color: #8b7078;
+}
+
+.feature-label-second {
+    border-top-right-radius: 10px;
+}
+
+.feature-label-fourth {
+    border-bottom-right-radius: 10px;
+}
+
+.check-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.comparison-grid .check-col.forchics-check {
+    background-color: #ff6c84;
+}
+
+.comparison-grid .check-col.others-check {
+    background-color: #8b7078;
+}
+
+.comparison-grid .check-col:last-child {
+    border-bottom: none;
+}
+
+.check-col img {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.comparison-header {
+    grid-template-columns: 200px 1fr 1fr;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.product-col.product-forchics {
+    grid-column: 2;
+}
+
+.product-col.product-others {
+    grid-column: 3;
+}
