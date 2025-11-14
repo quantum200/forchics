@@ -1,0 +1,125 @@
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.dad_guarantee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 40px 60px 40px;
+    overflow: hidden;
+}
+
+.guarantee {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    height: 486px;
+    border-radius: 15px;
+    box-shadow: #0000001f 0 0 30px;
+    background-color: #fff;
+}
+
+.left-picture-guarantee {
+    width: 55%;
+    height: 100%;
+}
+
+.left-picture-guarantee img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.right-info-guarantee {
+    width: 45%;
+    padding: 25px;
+    padding-right: 50px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.guarantee-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    border-radius: 0 15px 0 0;
+}
+
+.right-info h2 {
+    text-align: left;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.right-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.right-info img {
+    width: 70px;
+    height: 70px;
+    margin-right: 27px;
+    flex-shrink: 0;
+}
+
+.guarantee-body-wrapper {
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.collapsible-text {
+    position: static;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: none;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    background: transparent;
+    padding: 0;
+}
+
+.collapsible-text.active {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.guarantee-initial-content.hidden {
+    opacity: 1;
+    visibility: visible;
+}
+
+.toggle-details-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    display: block;
+    position: static;
+}
