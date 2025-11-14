@@ -23,6 +23,10 @@
     border-right: 1px solid #efefef;
 }
 
+.left-advice.mobile-view{
+    display: none;
+}
+
 .left-advice h2{
     font-size: 40px;
     margin-bottom: 33.2px;
@@ -69,4 +73,56 @@
 
 .info-advice .text{
     padding: 0 0 0 20px;
+}
+
+@media (max-width: 1000px){
+    .dad_information{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .information{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-advice{
+        display: none;
+    }
+
+    .left-advice.mobile-view{
+        display: flex;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .left-advice h2{
+        font-size: 50px;
+    }
+
+    .left-advice p{
+        font-size: 35px;
+    }
+
+    .left-advice a{
+        font-size: 35px;
+    }
+
+    .rigth-advice{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .title-info {
+        font-size: 25px;
+    }
+
+    .subtitle-info {
+        font-size: 33px;
+    }
+
+    .info-advice img{
+        height: 150px;
+        width: 150px;
+    }
 }

@@ -25,6 +25,10 @@
     color: #fff;
 }
 
+.redefining-more.mobile-view{
+    display: none;
+}
+
 .product-img{
     display: flex;
     flex-wrap: wrap;
@@ -40,4 +44,20 @@
 .product-img img{
     height: 185px;
     width: 185px;
+}
+
+@media (max-width: 1000px){
+    .redefining-more{
+        font-size: 28px;
+    }
+
+    .redefining-more{
+        display: none;
+    }
+
+    .redefining-more.mobile-view{
+        display: flex;
+        width: 100%;
+        padding-right: 0;
+    }
 }

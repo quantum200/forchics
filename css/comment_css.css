@@ -198,3 +198,13 @@
 .helpfulness-text{
     font-size: 12px;
 }
+
+@media (max-width: 1000px) {
+    .rating {
+        font-size: 30px;
+    }
+
+    .review-text {
+        font-size: 30px;
+    }
+}

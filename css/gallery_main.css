@@ -68,3 +68,13 @@
 #mainImageWrapper.cursor-right {
     cursor: url('/assets/cursor_right.png'), auto;
 }
+
+@media (max-width: 1000px) {
+    .thumbnail-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+}

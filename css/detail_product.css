@@ -149,3 +149,52 @@ hr {
     width: 15px;
     height: 15px;
 }
+
+@media (max-width: 1000px){
+    .logo-text{
+        font-size: 56px;
+    }
+
+    .old-price{
+        text-decoration: line-through;
+        margin-right: 10px;
+        font-size: 33px;
+    }
+
+    .new-price{
+        font-size: 33px;
+        font-weight: bold;
+        color: #ff6c84;
+    }
+
+    .price button{
+        height: 35px;
+        width: 190px;
+        font-size: 22px;
+    }
+
+    .title-text{
+        font-size: 34px;
+    }
+
+    .icon-list li {
+        font-size: 30px;
+    }
+
+    .text-status{
+        font-size: 36px;
+    }
+
+    .cart{
+        font-size: 27px;
+    }
+
+    .order{
+        font-size: 30px;
+    }
+
+    .order img {
+        width: 35px;
+        height: 35px;
+    }
+}

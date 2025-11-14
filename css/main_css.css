@@ -44,7 +44,39 @@ main{
 .main-text p{
     font-size: 24px;
 }
+
 .rating-text{
     color: #ff6c84;
     font-size: 20px;
+}
+
+@media (max-width: 1000px){
+    main{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .left-side{
+        display: flex;
+        width: 100%;
+        position: static;
+    }
+
+    .right-side{
+        display: flex;
+        width: 100%;
+    }
+
+    .rating-text{
+        font-size: 50px;
+    }
+
+    .main-text h1{
+        font-size: 50px;
+    }
+
+    .main-text p{
+        font-size: 32px;
+    }
 }

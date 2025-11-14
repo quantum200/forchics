@@ -75,7 +75,7 @@
 .date {
     font-weight: bold;
     font-size: 24px;
-    color: #ff6c84;
+    color: #ff6c84 !important;
     margin-bottom: 16px;
     text-transform: uppercase;
 }
@@ -89,4 +89,27 @@
 .explanation {
     font-size: 16px;
     color: #333;
+}
+
+@media (max-width: 1000px){
+    .rules{
+        width: 90%;
+    }
+
+    .rules h3 {
+        font-size: 58px;
+    }
+
+    .rules p {
+        font-size: 30px;
+    }
+
+    .rules-img {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rules-items {
+        width: 48%;
+    }
 }

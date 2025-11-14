@@ -96,6 +96,7 @@
     width: 50px;
     padding: 29px 15px 29px 15px;
 }
+
 .spons img {
     padding: 29px 15px 0;
     margin-right: 0;
@@ -110,4 +111,72 @@
     font-size: 13px;
     font-weight: bold;
     color: #a5a5a5
+}
+
+@media (max-width: 1000px){
+    .block_comparison{
+        width: 100%;
+    }
+
+    .comparison {
+        flex-direction: column;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .left-picture {
+        width: 100%;
+    }
+
+    .right-info {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .left-picture img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .right-info h1 {
+        font-size: 28px;
+    }
+
+    .result-text {
+        width: 90%;
+        font-size: 32px;
+    }
+
+    .right-info img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .text-label {
+        font-size: 32px;
+    }
+
+    .separator-line {
+        width: 90%;
+    }
+
+    .spons{
+        width: 90%;
+    }
+
+    .spons-text{
+        width: 90%;
+        font-size: 33px;
+    }
+    .spons img.dow{
+        height: 80px;
+        width: 90px;
+    }
+
+    .spons img {
+        padding: 29px 15px 0;
+        margin-right: 0;
+        height: 80px;
+        width: 40px;
+    }
+
 }
