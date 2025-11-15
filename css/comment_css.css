@@ -70,13 +70,13 @@
     color: #666;
 }
 
-.rating {
+.rating-right-side {
     font-size: 16px;
     color: #ff6c84;
     margin-top: 2px;
 }
 
-.date {
+.date-comment {
     font-size: 13px;
     color: #999;
 }
@@ -124,7 +124,6 @@
     border-right: none;
 }
 
-/* СТИЛІ МІТОК */
 .rating-labels {
     display: flex;
     justify-content: space-between;
@@ -174,6 +173,9 @@
 .review-text {
     font-size: 16px;
     line-height: 1.5;
+    color: black;
+    text-decoration: underline;
+    margin-left: 8px;
 }
 
 .review-footer {
@@ -199,12 +201,40 @@
     font-size: 12px;
 }
 
-@media (max-width: 1000px) {
-    .rating {
-        font-size: 30px;
+@media (max-width: 320px) {
+    .dad_comment {
+        padding: 0 24px;
+        width: 100%;
+    }
+
+    .comment{
+        width: 100%;
+    }
+
+    .comment-header{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rating-sliders{
+        flex-direction: column;
+        margin: 0 0 10px 35px;
+        width: 90%;
+    }
+
+    .rating-item{
+        width: auto;
+    }
+
+    .rating-right-side {
+        font-size: 14px;
+        width: auto;
     }
 
     .review-text {
-        font-size: 30px;
+        font-size: 15px;
+    }
+    .user-name{
+        font-size: 14px;
     }
 }

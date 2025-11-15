@@ -33,3 +33,14 @@
     opacity: 0.5;
     pointer-events: none;
 }
+
+@media (max-width: 320px){
+    .pagination-wrapper {
+        text-align: center;
+        width: 100%;
+    }
+
+    .pagination-list {
+        padding: 20px;
+    }
+}

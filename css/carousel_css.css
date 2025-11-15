@@ -33,3 +33,25 @@
 .handle .at-symbol {
     color: #ff6c84;
 }
+
+@media (max-width: 320px){
+    .carousel{
+        padding: 35px 0;
+    }
+
+    .carousel-item {
+        text-align: center;
+        width: 120px;
+    }
+
+    .carousel-item img {
+        width: 108px;
+        height: 108px;
+    }
+
+    .carousel-item .handle {
+        width: 108px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}

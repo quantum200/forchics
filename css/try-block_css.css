@@ -85,3 +85,27 @@
 .try-image .usp-item:nth-child(3).animate-visible {
     animation-delay: 0.4s;
 }
+
+@media (max-width: 320px){
+    .try-block{
+        width: 100%;
+        padding: 35px 24px;
+    }
+
+    .try {
+        width: 90%;
+    }
+
+    .try h3{
+        font-size: 27px;
+    }
+
+    .try-image {
+        flex-direction: column;
+    }
+
+    .usp-icon {
+        width: 60px;
+        height: 60px;
+    }
+}

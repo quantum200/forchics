@@ -99,3 +99,35 @@
 .note-disclaimer a{
     color: black;
 }
+
+@media (max-width: 320px){
+    .dad_faq{
+        padding: 24px;
+    }
+
+    .faq {
+        width: auto;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .faq-p{
+        font-size: 27px;
+    }
+
+    .faq-header{
+        width: 90%;
+        padding-left: 18px;
+        font-size: 15px;
+    }
+
+    .faq-content p{
+        font-size: 15px;
+        width: 90%;
+    }
+}

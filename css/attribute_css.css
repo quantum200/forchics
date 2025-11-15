@@ -200,3 +200,52 @@
 .product-col.product-others {
     grid-column: 3;
 }
+
+@media (max-width: 320px){
+    .dad_attribute{
+        padding: 20px 0 40px;
+    }
+
+    .left-attribute {
+        width: auto;
+        padding-top: 0;
+    }
+
+    .right-attribute {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .attribute {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .attribute-logo{
+        font-size: 30px;
+    }
+
+    .attribute-text{
+        font-size: 15px;
+        padding: 0 0 50px;
+    }
+
+    .feature-label{
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .comparison-grid, .comparison-header {
+        grid-template-columns: 110px 1fr 1fr;
+    }
+
+    .product-col img {
+        width: 80px;
+        height: auto;
+        top: -10px;
+    }
+}

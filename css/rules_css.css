@@ -91,17 +91,22 @@
     color: #333;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 320px){
+    .dad_rules {
+        padding: 24px 24px 0;
+    }
+
     .rules{
-        width: 90%;
+        width: 100%;
     }
 
     .rules h3 {
-        font-size: 58px;
+        font-size: 27px;
     }
 
     .rules p {
-        font-size: 30px;
+        font-size: 15px;
+        margin: 15px 0 0;
     }
 
     .rules-img {

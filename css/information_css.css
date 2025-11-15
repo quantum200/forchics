@@ -75,10 +75,10 @@
     padding: 0 0 0 20px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 320px){
     .dad_information{
         width: 100%;
-        padding-bottom: 40px;
+        padding: 20px 24px;
     }
 
     .information{
@@ -94,35 +94,47 @@
         display: flex;
         width: 100%;
         padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #efefef;
     }
 
     .left-advice h2{
-        font-size: 50px;
+        font-size: 24px;
+        margin-bottom: 19.92px;
     }
 
     .left-advice p{
-        font-size: 35px;
+        font-size: 15px;
     }
 
     .left-advice a{
-        font-size: 35px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .rigth-advice{
-        width: 100%;
         padding-left: 0;
+        margin-top: 40px;
     }
 
     .title-info {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .subtitle-info {
-        font-size: 33px;
+        font-size: 18px;
+    }
+
+    .info-advice{
+        margin-bottom: 15px;
+    }
+
+    .info-advice:last-child{
+        margin-bottom: 0;
     }
 
     .info-advice img{
-        height: 150px;
-        width: 150px;
+        height: 90px;
+        width: 90px;
     }
 }

@@ -16,6 +16,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 40px;
+    margin: 0 auto;
     overflow: hidden;
     background-color: #ffe0e6;
 }
@@ -53,3 +54,22 @@
 .icon-special img:nth-child(4).animate-visible { animation-delay: 0.3s; }
 .icon-special img:nth-child(5).animate-visible { animation-delay: 0.4s; }
 .icon-special img:nth-child(6).animate-visible { animation-delay: 0.5s; }
+
+@media (max-width: 320px) {
+    .icon-row{
+        padding: 24px;
+        width: 100%;
+    }
+    .icon-special {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50%;
+        height: auto;
+    }
+
+    .icon-special img {
+        width: 88px;
+        height: 88px;
+    }
+}

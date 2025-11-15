@@ -133,20 +133,49 @@
     color: #555;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 320px){
+    .accordion-item{
+        width: 90%;
+    }
+
     .accordion-header {
-        font-size: 32px;
+        font-size: 14px;
+        width: 100%;
     }
 
     .accordion-content p {
-        font-size: 28px;
+        font-size: 14px;
+        height: 100%;
+    }
+
+    .ingredients-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .ingredient-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .icon-wrapper {
+        width: 27px;
+        height: 27px;
     }
 
     .title {
-        font-size: 28px;
+        font-size: 14px;
     }
 
     .subtitle {
-        font-size: 28px;
+        font-size: 13px;
+    }
+
+    .full-ingredients-text{
+        padding-left: 0;
     }
 }
