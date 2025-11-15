@@ -34,6 +34,70 @@
     color: #ff6c84;
 }
 
+@media (max-width: 768px){
+    .carousel{
+        padding: 35px 0;
+    }
+
+    .carousel-item {
+        text-align: center;
+        width: 245px;
+    }
+
+    .carousel-item img {
+        width: 238px;
+        height: 238px;
+    }
+
+    .carousel-item .handle {
+        width: 108px;
+    }
+}
+
+@media (max-width: 425px){
+    .carousel{
+        padding: 35px 0;
+    }
+
+    .carousel-item {
+        text-align: center;
+        width: 163px;
+    }
+
+    .carousel-item img {
+        width: 161px;
+        height: 161px;
+    }
+
+    .carousel-item .handle {
+        width: 140px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 375px){
+    .carousel{
+        padding: 35px 0;
+    }
+
+    .carousel-item {
+        text-align: center;
+        width: 140px;
+    }
+
+    .carousel-item img {
+        width: 136px;
+        height: 136px;
+    }
+
+    .carousel-item .handle {
+        width: 140px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
 @media (max-width: 320px){
     .carousel{
         padding: 35px 0;

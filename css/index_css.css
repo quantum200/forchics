@@ -1,5 +1,10 @@
-*{
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
 }

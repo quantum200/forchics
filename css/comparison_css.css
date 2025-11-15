@@ -113,6 +113,247 @@
     color: #a5a5a5
 }
 
+@media (max-width: 768px){
+    .block_comparison{
+        width: 100%;
+        padding: 40px;
+    }
+
+    .comparison {
+        flex-direction: column;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .left-picture {
+        width: 100%;
+    }
+
+    .right-info {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .left-picture img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .right-info-comparison{
+        width: auto;
+        padding: 25px;
+    }
+
+    .h2-comparison {
+        font-size: 38px;
+        padding: 0;
+        width: auto;
+    }
+
+    .result-text {
+        font-size: 16px;
+    }
+
+    .right-info-comparison img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .text-label {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .separator-line {
+        width: 90%;
+    }
+
+    .spons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .spons img.desktop-view {
+        display: flex;
+    }
+
+    .spons-text{
+        width: 100%;
+        font-size: 13px;
+        margin-top: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .spons img {
+        padding: 29px 15px 0;
+        margin-right: 0;
+        height: 80px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 425px){
+    .block_comparison{
+        width: 100%;
+        padding: 35px 24px;
+    }
+
+    .comparison {
+        flex-direction: column;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .left-picture {
+        width: 100%;
+    }
+
+    .right-info {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .left-picture img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .right-info-comparison{
+        width: auto;
+        padding: 25px;
+    }
+
+    .h2-comparison {
+        font-size: 20px;
+        padding: 0;
+        width: auto;
+    }
+
+    .result-text {
+        font-size: 15px;
+    }
+
+    .right-info-comparison img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .text-label {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .separator-line {
+        width: 90%;
+    }
+
+    .spons{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .spons img.desktop-view {
+        display: none;
+    }
+
+    .spons-text{
+        width: 100%;
+        font-size: 14px;
+        margin-top: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .spons img {
+        padding: 29px 15px 0;
+        margin-right: 0;
+        height: 59px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 375px){
+    .block_comparison{
+        width: 100%;
+        padding: 35px 24px;
+    }
+
+    .comparison {
+        flex-direction: column;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .left-picture {
+        width: 100%;
+    }
+
+    .right-info {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .left-picture img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .right-info-comparison{
+        width: auto;
+        padding: 25px;
+    }
+
+    .h2-comparison {
+        font-size: 20px;
+        padding: 0;
+        width: auto;
+    }
+
+    .result-text {
+        font-size: 15px;
+    }
+
+    .right-info-comparison img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .text-label {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .separator-line {
+        width: 90%;
+    }
+
+    .spons{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .spons img.desktop-view {
+        display: none;
+    }
+
+    .spons-text{
+        width: 100%;
+        font-size: 14px;
+        margin-top: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .spons img {
+        padding: 29px 15px 0;
+        margin-right: 0;
+        height: 59px;
+        width: 70px;
+    }
+}
+
 @media (max-width: 320px){
     .block_comparison{
         width: 100%;
@@ -184,15 +425,10 @@
         padding: 0 20px;
         text-align: center;
     }
-    .spons img.dow{
-        height: 50px;
-        width: 40px;
-    }
-
     .spons img {
         padding: 29px 15px 0;
         margin-right: 0;
-        height: 80px;
-        width: 40px;
+        height: 50px;
+        width: 45px;
     }
 }

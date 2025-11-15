@@ -131,34 +131,199 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .sticky-footer-bar {
-        height: 55px !important;
+        height: 80px;
     }
+
     .footer-content-wrapper {
-        padding: 5px 10px;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        white-space: normal;
+        word-break: break-word;
     }
 
-    .product-summary {
-        gap: 8px;
-    }
-
-    .product-summary img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .product-name {
+    .product-details{
         display: none;
     }
 
-    .reviews-count, .rating {
-        font-size: 11px;
+    .product-summary{
+        display: none;
+    }
+
+    .usp-info p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .usp-info {
+        width: 100%;
+        margin: 0;
+        white-space: nowrap;
+        overflow-wrap: break-word;
+        overflow: hidden;
+
+        display: block;
+        padding-right: 5px;
+        text-align: left;
     }
 
     .add-to-cart-btn {
-        width: 10px;
+        flex-shrink: 0;
+        width: 100%;
+        height: 60%;
+        font-size: 17px;
         padding: 8px 10px;
-        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .sticky-footer-bar {
+        height: 80px;
+    }
+
+    .footer-content-wrapper {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .product-details{
+        display: none;
+    }
+
+    .product-summary{
+        display: none;
+    }
+
+    .usp-info p{
+        font-size: 13px;
+    }
+
+    .usp-info {
+        width: 100%;
+        margin: 0;
+        white-space: nowrap;
+        overflow-wrap: break-word;
+        overflow: hidden;
+
+        display: block;
+        padding-right: 5px;
+        text-align: left;
+    }
+
+    .add-to-cart-btn {
+        flex-shrink: 0;
+        width: 100%;
+        height: 60%;
+        font-size: 17px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .sticky-footer-bar {
+        height: 80px;
+    }
+
+    .footer-content-wrapper {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .product-details{
+        display: none;
+    }
+
+    .product-summary{
+        display: none;
+    }
+
+    .usp-info p{
+        font-size: 11px;
+    }
+
+    .usp-info {
+        width: 100%;
+        margin: 0;
+        white-space: nowrap;
+        overflow-wrap: break-word;
+        overflow: hidden;
+
+        display: block;
+        padding-right: 5px;
+        text-align: left;
+    }
+
+    .add-to-cart-btn {
+        flex-shrink: 0;
+        width: 100%;
+        height: 60%;
+        font-size: 17px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .sticky-footer-bar {
+        height: 80px;
+    }
+
+    .footer-content-wrapper {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .product-details{
+        display: none;
+    }
+
+    .product-summary{
+        display: none;
+    }
+
+    .usp-info p{
+        font-size: 10px;
+    }
+
+    .usp-info {
+        width: 100%;
+        margin: 0;
+        white-space: nowrap;
+        overflow-wrap: break-word;
+        overflow: hidden;
+
+        display: block;
+        padding-right: 5px;
+        text-align: left;
+    }
+
+    .add-to-cart-btn {
+        flex-shrink: 0;
+        width: 100%;
+        height: 60%;
+        font-size: 17px;
+        padding: 8px 10px;
     }
 }

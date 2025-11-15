@@ -86,6 +86,58 @@
     animation-delay: 0.4s;
 }
 
+@media (max-width: 768px){
+    .try-block{
+        width: 100%;
+        padding: 40px;
+    }
+
+    .try {
+        width: 90%;
+    }
+
+    .try h3{
+        font-size: 38px;
+    }
+
+    .try-image {
+        flex-direction: row;
+    }
+
+    .usp-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .usp-desc{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px){
+    .try-block{
+        width: 100%;
+        padding: 35px 24px;
+    }
+
+    .try {
+        width: 90%;
+    }
+
+    .try h3{
+        font-size: 27px;
+    }
+
+    .try-image {
+        flex-direction: column;
+    }
+
+    .usp-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
 @media (max-width: 320px){
     .try-block{
         width: 100%;

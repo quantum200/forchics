@@ -44,6 +44,7 @@
     opacity: 0;
     animation: none;
 }
+
 .icon-special img.animate-visible {
     animation: slideInUp 0.6s ease-out forwards;
 }
@@ -55,21 +56,57 @@
 .icon-special img:nth-child(5).animate-visible { animation-delay: 0.4s; }
 .icon-special img:nth-child(6).animate-visible { animation-delay: 0.5s; }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .icon-row{
-        padding: 24px;
+        padding: 40px;
         width: 100%;
     }
     .icon-special {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 50%;
-        height: auto;
+        width: 100%;
+        max-width: none;
+        gap: 20px 0;
     }
 
     .icon-special img {
-        width: 88px;
+        width: 84px;
+        height: 84px;
+    }
+}
+
+@media (max-width: 425px) {
+    .icon-row{
+        padding: 24px;
+    }
+    .icon-special {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 15px 0;
+    }
+
+    .icon-special img {
+        width: calc(50% - 8px);
+        height: 88px;
+    }
+}
+
+@media (max-width: 320px) {
+    .icon-row{
+        padding: 24px;
+    }
+    .icon-special {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 15px 0;
+    }
+
+    .icon-special img {
+        width: calc(50% - 8px);
         height: 88px;
     }
 }

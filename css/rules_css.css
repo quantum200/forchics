@@ -72,7 +72,7 @@
     animation-delay: 0.6s;
 }
 
-.date {
+.date-rules {
     font-weight: bold;
     font-size: 24px;
     color: #ff6c84 !important;
@@ -89,6 +89,94 @@
 .explanation {
     font-size: 16px;
     color: #333;
+}
+
+@media (max-width: 768px){
+    .dad_rules {
+        padding: 40px 40px 0 40px;
+    }
+
+    .rules{
+        width: 100%;
+    }
+
+    .rules h3 {
+        font-size: 38px;
+    }
+
+    .date-rules{
+        font-size: 20px !important;
+    }
+
+    .rules p {
+        font-size: 16px;
+        margin: 16px 0 0;
+    }
+
+    .rules-img {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rules-items {
+        width: 25%;
+    }
+}
+
+@media (max-width: 425px){
+    .dad_rules {
+        padding: 24px 24px 0;
+    }
+
+    .rules{
+        width: 100%;
+    }
+
+    .rules h3 {
+        font-size: 27px;
+    }
+
+    .rules p {
+        font-size: 15px;
+        margin: 15px 0 0;
+    }
+
+    .rules-img {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rules-items {
+        width: 48%;
+    }
+}
+
+@media (max-width: 375px){
+    .dad_rules {
+        padding: 24px 24px 0;
+    }
+
+    .rules{
+        width: 100%;
+    }
+
+    .rules h3 {
+        font-size: 27px;
+    }
+
+    .rules p {
+        font-size: 15px;
+        margin: 15px 0 0;
+    }
+
+    .rules-img {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rules-items {
+        width: 48%;
+    }
 }
 
 @media (max-width: 320px){
