@@ -201,6 +201,45 @@
     font-size: 12px;
 }
 
+@media (max-width: 1024px){
+    .dad_comment {
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    .comment{
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .comment-header{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .rating-sliders{
+        flex-direction: row;
+        margin: 0 0 10px 35px;
+        width: 90%;
+    }
+
+    .rating-item{
+        width: auto;
+    }
+
+    .rating-right-side {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .review-text {
+        font-size: 15px;
+    }
+    .user-name{
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
     .dad_comment {
         padding: 0 40px;

@@ -91,6 +91,17 @@
     color: #333;
 }
 
+@media (max-width: 1024px){
+    .dad_rules {
+        justify-content: flex-start;
+        padding: 60px 40px 0;
+    }
+
+    .rules {
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px){
     .dad_rules {
         padding: 40px 40px 0 40px;

@@ -75,6 +75,17 @@
     padding: 0 0 0 20px;
 }
 
+@media(max-width: 1024px){
+    .dad_information{
+        justify-content: flex-start;
+        padding: 40px;
+    }
+
+    .information{
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px){
     .dad_information{
         width: 100%;

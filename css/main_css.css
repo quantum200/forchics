@@ -54,7 +54,7 @@ main{
     main{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         box-sizing: border-box;
@@ -65,7 +65,7 @@ main{
     .left-side{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 50%;
         position: sticky;
         top: 60px;
     }
@@ -73,7 +73,7 @@ main{
     .right-side{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 50%;
         flex-shrink: 0;
     }
 

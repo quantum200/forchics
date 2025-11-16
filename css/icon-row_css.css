@@ -56,6 +56,27 @@
 .icon-special img:nth-child(5).animate-visible { animation-delay: 0.4s; }
 .icon-special img:nth-child(6).animate-visible { animation-delay: 0.5s; }
 
+@media (max-width: 1024px) {
+    .icon-row{
+        padding: 40px;
+        width: 100%;
+    }
+    .icon-special {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        max-width: none;
+        gap: 20px 0;
+    }
+
+    .icon-special img {
+        width: 84px;
+        height: 84px;
+    }
+}
+
 @media (max-width: 768px) {
     .icon-row{
         padding: 40px;

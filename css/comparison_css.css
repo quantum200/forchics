@@ -113,15 +113,26 @@
     color: #a5a5a5
 }
 
+@media (max-width: 1024px){
+    .block_comparison{
+        justify-content: flex-start;
+        padding: 40px;
+    }
+
+    .comparison {
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px){
     .block_comparison{
-        width: 100%;
+        justify-content: flex-start;
         padding: 40px;
     }
 
     .comparison {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         border-radius: 15px;
     }
 
@@ -196,13 +207,13 @@
 
 @media (max-width: 425px){
     .block_comparison{
-        width: 100%;
+        justify-content: flex-start;
         padding: 35px 24px;
     }
 
     .comparison {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         border-radius: 15px;
     }
 
@@ -276,13 +287,13 @@
 
 @media (max-width: 375px){
     .block_comparison{
-        width: 100%;
+        justify-content: flex-start;
         padding: 35px 24px;
     }
 
     .comparison {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         border-radius: 15px;
     }
 
@@ -356,13 +367,13 @@
 
 @media (max-width: 320px){
     .block_comparison{
-        width: 100%;
+        justify-content: flex-start;
         padding: 35px 24px;
     }
 
     .comparison {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         border-radius: 15px;
     }
 

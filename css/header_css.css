@@ -137,6 +137,10 @@ header {
     vertical-align: middle;
 }
 
+.span-header-banner.mobile-view{
+    display: none;
+}
+
 @media (max-width: 1440px){
     .span-header-banner.mobile-view{
         display: none;
@@ -162,6 +166,10 @@ header {
 
     .span-header-banner.desktop-view{
         display: none;
+    }
+
+    .span-header-banner.mobile-view{
+        display: flex;
     }
 
     .item {

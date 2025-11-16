@@ -201,6 +201,28 @@
     grid-column: 3;
 }
 
+@media (max-width: 1024px){
+    .attribute {
+        flex-direction: row;
+    }
+
+    .left-attribute {
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .right-attribute {
+        width: auto;
+        padding: 30px 15px;
+    }
+
+    .attribute {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px){
     .dad_attribute{
         padding: 20px 0 40px;

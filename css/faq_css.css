@@ -100,6 +100,17 @@
     color: black;
 }
 
+@media (max-width: 1024px){
+    .dad_faq{
+        justify-content: flex-start;
+        padding: 40px;
+    }
+
+    .faq {
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px){
     .dad_faq{
         padding: 40px;

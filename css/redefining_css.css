@@ -46,6 +46,19 @@
     width: 185px;
 }
 
+@media (max-width: 1024px){
+    .redefining{
+        justify-content: flex-start;
+        padding: 40px;
+        width: 100%;
+    }
+
+    .product-img img{
+        height: 127px;
+        width: 127px;
+    }
+}
+
 @media (max-width: 768px){
     .redefining{
         padding: 40px;

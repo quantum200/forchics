@@ -34,6 +34,28 @@
     color: #ff6c84;
 }
 
+@media (max-width: 1024px){
+    .carousel{
+        padding: 35px 0;
+    }
+
+    .carousel-item {
+        text-align: center;
+        width: 130px;
+    }
+
+    .carousel-item img {
+        width: 122px;
+        height: 122px;
+    }
+
+    .carousel-item .handle {
+        width: 108px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
 @media (max-width: 768px){
     .carousel{
         padding: 35px 0;
