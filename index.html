@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/index_css.css">
+    <link rel="stylesheet" href="css/header_css.css">
+    <link rel="stylesheet" href="css/footer-banner_css.css">
+    <link rel="stylesheet" href="css/main_css.css">
+    <link rel="stylesheet" href="css/gallery_main.css">
+    <link rel="stylesheet" href="css/detail_product.css">
+    <link rel="stylesheet" href="css/description_css.css">
+    <link rel="stylesheet" href="css/comparison_css.css">
+    <link rel="stylesheet" href="css/information_css.css">
+    <link rel="stylesheet" href="css/redefining_css.css">
+    <link rel="stylesheet" href="css/rules_css.css">
+    <link rel="stylesheet" href="css/attribute_css.css">
+    <link rel="stylesheet" href="css/guarantee_css.css">
+    <link rel="stylesheet" href="css/faq_css.css">
+    <link rel="stylesheet" href="css/proposal_css.css">
+    <link rel="stylesheet" href="css/carousel_css.css">
+    <link rel="stylesheet" href="css/reviews_css.css">
+    <link rel="stylesheet" href="css/comment_css.css">
+    <link rel="stylesheet" href="css/try-block_css.css">
+    <link rel="stylesheet" href="css/icon-row_css.css">
+    <link rel="stylesheet" href="css/footer_css.css">
+    <link rel="stylesheet" href="css/modal-overlay_css.css">
+    <title>Eyebrow Growth Serum: Vegan</title>
+</head>
+<body>
+
+<header>
+    <div class="top-banner">
+        <span class = "span_header">🔥ПРЕДЧОРНА П'ЯТНИЦЯ РОЗПРОДАЖ ЗАКІНЧУЄТЬСЯ🔥</span>
+        <div class="countdown" id="event-countdown">
+            <div class="timer-box hours-box"><span id="cd-hours">00</span><span class="cd-label">ГОД</span></div>
+            <span class="cd-separator">:</span>
+            <div class="timer-box minutes-box"><span id="cd-minutes">00</span><span class="cd-label">ХВ</span></div>
+            <span class="cd-separator">:</span>
+            <div class="timer-box seconds-box"><span id="cd-seconds">00</span><span class="cd-label">СЕК</span></div>
+        </div>
+    </div>
+</header>
+
+
+<div class="sticky-footer-bar">
+    <div class="footer-content-wrapper">
+        <div class="product-summary">
+            <img src="assets/picture1.jpg">
+            <div class="product-details">
+                <div class="review-summary-row">
+                    <span class="rating">★★★★★</span>
+                    <span class="reviews-count">1390 Відгуків</span>
+                </div>
+                <span class="product-name">Сироватка для росту брів</span>
+            </div>
+        </div>
+
+        <div class="usp-info">
+            <p>60-денна гарантія + безкоштовне повернення 100% веганські</p>
+        </div>
+        <button class="add-to-cart-btn">ДОДАТИ У КОШИК</button>
+    </div>
+</div>
+
+
+<div class="header-nav">
+    <img src="assets/menu.png" class="header-nav-img mobile-view">
+    <img src="assets/logosite.png" class="header-logo">
+    <div class="login" id="cart-icon-clickable">
+        <img src="assets/bag.png" class="login-img">
+        <span class="cart-count">0</span>
+    </div>
+</div>
+
+<div class="modal-overlay" id="cart-modal">
+    <div class="shopping-cart-content">
+        <div class="cart-header">
+            <h3>Корзина</h3>
+            <span class="close-btn">&times;</span>
+        </div>
+
+        <div class="promo-strip">
+            <p>Чудовий вибір! Ось ваші товари:</p>
+            <div class="animated-strip"></div>
+            <p class="free-shipping-msg">Вітаємо! Ви отримали БЕЗКОШТОВНУ доставку</p>
+        </div>
+
+        <div class="cart-items-container" id="cart-items-container">
+        </div>
+        <div class="cart-footer">
+            <div class="summary-row">
+                <span>Доставка</span>
+                <span class="shipping-cost">Безкоштовно</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>Загалом</span>
+                <span class="old-total">$0</span> <span class="current-total">$0</span> </div>
+
+            <button class="checkout-btn">
+                🔒ПРОДОВЖИТИ ДО БЕЗПЕЧНОЇ ОПЛАТИ
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="checkout-modal" style="display: none;">
+    <div class="checkout-form-content">
+        <div class="checkout-header">
+            <h3>Введіть ваші дані</h3>
+            <span class="close-checkout-btn">&times;</span>
+        </div>
+
+        <form id="order-form">
+            <label for="user-name">Ім'я:</label>
+            <input type="text" id="user-name" name="name" required>
+
+            <label for="user-phone">Номер телефону:</label>
+            <input type="tel" id="user-phone" name="phone" value="+38" required>
+
+            <button type="submit" class="order-submit-btn">Замовити</button>
+        </form>
+    </div>
+</div>
+
+<template id="cart-item-template">
+    <div class="cart-item" data-item-id="1">
+        <div class="item-details">
+            <img src="assets/picture1.jpg" alt="Serum" class="item-img">
+            <div class="item-info">
+                <h4>Сироватка для росту брів</h4>
+                <p>1 флакон</p>
+                <p class="subscription">1 місяць передплати</p>
+
+                <div class="item-controls">
+                    <div class="quantity-control">
+                        <button class="qty-btn minus-btn">-</button>
+                        <input type="text" value="1" readonly class="qty-input">
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                    <button class="remove-btn">Видалити</button>
+                </div>
+            </div>
+        </div>
+        <div class="item-price">
+            <span class="old-price">$39</span>
+            <span class="current-price">$22</span>
+        </div>
+    </div>
+</template>
+<div class="banner-info">
+    <span class = "span-header-banner desktop-view">
+        <span class="item-header"><img src = "assets/truck.png"> Безкоштовна доставка сьогодні</span>
+        <span class="item-header"><img src = "assets/heart.png"> 72,500+ щасливих красунь</span>
+    </span>
+    <span class="span-header-banner mobile-view">БЕЗКОШТОВНА доставка зі складу у США</span>
+</div>
+
+<main>
+    <div class = "left-side">
+        <div class="product-gallery">
+            <div class="main-image-container" id="mainImageWrapper">
+                <button class="zoom-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <img id="mainImage" src="assets/picture1.jpg">
+            </div>
+
+            <div class="thumbnail-list">
+                <div class="thumbnail active" data-src="assets/picture1.jpg"><img src="assets/picture1.jpg"></div>
+                <div class="thumbnail" data-src="assets/picture2.jpg"><img src="assets/picture2.jpg"></div>
+                <div class="thumbnail" data-src="assets/picture3.webp"><img src="assets/picture3.webp"></div>
+                <div class="thumbnail" data-src="assets/picture4.jpg"><img src="assets/picture4.jpg"></div>
+                <div class="thumbnail" data-src="assets/picture5.webp"><img src="assets/picture5.webp"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "right-side">
+        <div class = "rating-row">
+            <span class="rating-right-side">★★★★★</span>
+            <span class="review-text">Дуже добре (1390 відгуків)</span>
+        </div>
+        <div class = "logo-text">Сироватка для росту брів</div>
+        <div class = "price">
+            <div class = "old-price">$39</div>
+            <div class = "new-price">$22</div>
+            <button>ЗБЕРЕЖЕНО $17</button>
+        </div>
+        <hr>
+        <div class = "title-text">Отримайте більш густі та об'ємні брови за 4 тижні</div>
+        <ul class = "icon-list">
+            <li class = "calendar">Результати менш ніж за 4 тижні</li>
+            <li class = "eye">Отримайте густіші, більш об'ємні брови</li>
+            <li class = "oil">Без масла. Безпечний для татуажу брів</li>
+            <li class = "bunny">Без жорстокості, веганський, без парабенів та ароматизаторів</li>
+        </ul>
+        <hr>
+        <div class = "text-status">
+            <span class="status-dot"></span>В наявності - Кількість обмежена
+        </div>
+        <button class = "cart" id="add-to-cart-btn">ДОДАТИ В КОШИК</button>
+        <div class = "order"><img src="assets/usa.png">Замовте зараз, отримайте<span class="order-date"> Четвер, 13 листопада</span></div>
+        <hr>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Опис
+                    <span class="icon"></span>
+                </div>
+                <div class="accordion-content">
+                    <p>Готуйтеся до більш густих, темних і виразних брів! Представляємо сироватку для росту брів ForChics – потужний засіб для покращення вигляду тонких, рідких або надмірно вищипаних брів.
+                        Високоефективна формула, що містить науково доведені інгредієнти, спрямовані на зміцнення волосків брів, завдяки чому вони стають густішими і виразнішими вже за 27 днів.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Як подати заявку
+                    <span class="icon"></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="steps-container">
+                        <p class="step-item">
+                            <b>КРОК 1</b><br>
+                            Зніміть макіяж за допомогою безмасляного засобу для зняття макіяжу або очищувача.
+                        </p>
+                        <p class="step-item">
+                            <b>КРОК 2</b><br>
+                            Нанесіть тонкий шар сироватки для брів ForChics на всю лінію брів. Одного занурення вистачить для обох брів.
+                        </p>
+                        <p class="step-item">
+                            <b>КРОК 3</b><br>
+                            Якщо ви наносите додаткові косметичні засоби, зачекайте, поки сироватка повністю висохне.
+                        </p>
+                        <p class="step-item">
+                            <b>КРОК 4</b><br>
+                            Залиште сироватку на ніч.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Інгредієнти
+                    <span class="icon"></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="ingredients-grid">
+                        <div class="ingredient-item">
+                            <span class="icon-wrapper"><img src="assets/biotin.png"></span>
+                            <div class="text-content">
+                                <div class="title">Екстракт листя розмарину лікарського</div>
+                                <div class="subtitle">Стимулює ріст</div>
+                            </div>
+                        </div>
+
+                        <div class="ingredient-item"><span class="icon-wrapper"><img src="assets/vitamin.png"></span>
+                            <div class="text-content">
+                                <div class="title">Вітамін B5</div>
+                                <div class="subtitle">Згладжує, кондиціонує та підтримує</div>
+                            </div>
+                        </div>
+
+                        <div class="ingredient-item"><span class="icon-wrapper"><img src="assets/leaf.png"></span>
+                            <div class="text-content">
+                                <div class="title">Женьшень</div>
+                                <div class="subtitle">Допомагає відростити довші та густіші брови</div>
+                            </div>
+                        </div>
+
+                        <div class="ingredient-item"><span class="icon-wrapper"><img src="assets/lash.png"></span>
+                            <div class="text-content">
+                                <div class="title">Вітамін B7</div>
+                                <div class="subtitle">Необхідний для здорового росту волосся</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="full-ingredients-text">
+                        Очищена вода, женьшень, екстракт лігуструму люцидум, бутиленгліколь,
+                        екстракт ганодерми синенсис, екстракт розмарину лікарського,
+                        екстракт кори магнолії лікарської, біотіноїл трипептид-4,
+                        міристоїл пентапептид-17, бензоат натрію, сорбат калію, вітамін B7 (біотин), токоферол, вітамін E.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Це дійсно працює?
+                    <span class="icon"></span>
+                </div>
+                <div class="accordion-content">
+                    <p>
+                        Так, це можливо! Однак ви повинні бути терплячими і послідовними. Час, необхідний для досягнення результатів, може варіюватися, оскільки залежить від стадії циклу росту брів на момент початку використання продукту.
+                        Зазвичай для досягнення повних результатів потрібно від 8 до 12 тижнів. Якщо після 12 тижнів послідовного використання ви не досягли жодних результатів, ви маєте право вимагати повернення грошей.
+                        Дуже важливо, щоб ви використовували продукт правильно, відповідно до інструкцій.
+                    </p>
+                    <p>
+                        Сироватка для росту брів ForChics підходить для коротких, тонких і слабких брів. Також підходить для надмірно вищипаних брів або при захворюваннях брів.
+                        Сироватку для брів ForChics можна використовувати разом з татуюванням брів, щоб допомогти зберегти здоров'я ваших природних брів, однак ми рекомендуємо спочатку проконсультуватися з майстром з татуювання брів.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Що таке 100% гарантія результату?
+                    <span class="icon"></span>
+                </div>
+                <div class="accordion-content">
+                    <p>
+                        Ми пропонуємо безризикову <b>гарантію повернення грошей</b>, якщо ви не досягли жодних результатів після 12 тижнів використання — без зайвих питань!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<div class="main-text">
+    <span class="rating-text">★★★★★</span>
+    <h2>Що кажуть такі красуні, як і ти</h2>
+    <p>Оцінка 4,9/5 від понад 72 500 задоволених клієнтів</p>
+</div>
+
+
+<div class = "block_comparison">
+    <div class = "comparison">
+        <div class = "left-picture">
+            <img src="assets/picture4.jpg">
+        </div>
+        <div class = "right-info-comparison">
+            <h2 class = "h2-comparison">Підкресліть красу своїх брів</h2>
+            <p class="result-row"><img src="assets/percent1.png"><span class="result-text">Відновилася після рідких брів</span></p>
+            <p class="result-row"><img src="assets/percent.png"><span class="result-text">Відновилася після рідких брів</span></p>
+            <div class="separator-line">
+                <div class="line"></div>
+                <span class="text-label">ЯК БАЧИМО</span>
+                <div class="line"></div>
+            </div>
+            <div class = "spons">
+                <img src="assets/branch.png" class = "desktop-view">
+                <img src="assets/cbs_news.png">
+                <img src="assets/fox_news.png">
+                <img src="assets/nbc_news.png">
+                <img src="assets/reverse_branch.png" class = "desktop-view">
+            </div>
+            <p class = "spons-text">І БІЛЬШЕ 200 НОВИННИХ САЙТІВ</p>
+        </div>
+    </div>
+</div>
+
+
+<div class = "dad_information">
+    <div class = "information">
+        <div class = "left-advice">
+            <h2>Науково Доведені <br>Активні Інгредієнти</h2>
+            <p>Сироватка для росту брів ForChics містить 100% натуральні
+                <br> інгредієнти з революційною дією, що сприяють росту густих
+                <br>і здорових брів.</p>
+            <a href="#dad_faq">Дивитися повний список інгредієнтів</a>
+        </div>
+        <div class = "left-advice mobile-view">
+            <h2>Науково Доведені Активні Інгредієнти</h2>
+            <p>Сироватка для росту брів ForChics містить 100% натуральні
+                інгредієнти з революційною дією, що сприяють росту густих
+               і здорових брів.</p>
+            <a href="#dad_faq">Дивитися повний список інгредієнтів</a>
+        </div>
+
+
+        <div class = "rigth-advice">
+            <div class="info-advice">
+                <img src="assets/panax.png">
+                <div class="text">
+                    <p class = "title-info">Женьшень</p>
+                    <p class = "subtitle-info">Відновлює волосяні фолікули</p>
+                </div>
+            </div>
+            <div class="info-advice">
+                <img src="assets/rosemarinus.png">
+                <div class="text">
+                    <p class = "title-info">Екстракт розмарину лікарського</p>
+                    <p class = "subtitle-info">Відновлює природній вигляд брів</p>
+                </div>
+            </div>
+            <div class="info-advice">
+                <img src="assets/magnolia.png">
+                <div class="text">
+                    <p class = "title-info">Екстракт кори магнолії лікарської</p>
+                    <p class = "subtitle-info">Зменшує випадіння волосся</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class = "redefining">
+    <p class = "redefining-logo">Нове Визначення <strong>Чистого Росту Брів</strong></p>
+    <div class = "product-img">
+        <div class = "redefining-items"><img src = "assets/clean.png"></div>
+        <div class = "redefining-items"><img src = "assets/cruelty.png"></div>
+        <div class = "redefining-items"><img src = "assets/vegan.png"></div>
+        <div class = "redefining-items"><img src = "assets/plant.png"></div>
+        <div class = "redefining-items"><img src = "assets/fragrance.png"></div>
+        <div class = "redefining-items"><img src = "assets/peg.png"></div>
+    </div>
+    <p class = "redefining-more">Змініть свої тонкі та надмірно вищипані брови на природні, густіші та темніші.
+        Ексклюзивна формула <br>містить інноваційний пептид, який імітує цикл відростання волосся.</p>
+
+    <p class = "redefining-more mobile-view">Змініть свої тонкі та надмірно вищипані брови на природні, густіші та темніші.
+        Ексклюзивна формула містить інноваційний пептид, який імітує цикл відростання волосся.</p>
+</div>
+
+
+<div class = "dad_rules">
+    <div class = "rules">
+        <h3 class = "rules-logo">Більш густі брови всього за 4 тижні</h3>
+        <p class = "rules-text">Відчуйте, як ваші природні брови досягають свого повного потенціалу росту всього за 30 днів завдяки сироватці для росту брів ForChics.
+            НАГАДУВАННЯ: створення процедури догляду за бровами вимагає послідовності.
+            Тривалі результати досягаються завдяки терпінню та щоденному використанню.</p>
+        <div class = "rules-img">
+            <div class = "rules-items">
+                <p class = "date-rules">1 ТИЖДЕНЬ</p>
+                <img src = "assets/week1.png" class = "img-redefining">
+                <p class = "explanation">Готуйся, Шик! Більш густі брови вже на підході.</p>
+            </div>
+            <div class = "rules-items">
+                <p class = "date-rules">2 ТИЖДЕНЬ</p>
+                <img src = "assets/week2.png" class = "img-redefining">
+                <p class = "explanation">Продовжуй! Послідовність – це ключ до успіху. Якщо ти забула, просто нанеси засіб наступного дня!</p>
+            </div>
+            <div class = "rules-items">
+                <p class = "date-rules">3 ТИЖДЕНЬ</p>
+                <img src = "assets/week3.png" class = "img-redefining">
+                <p class = "explanation">Подивіться на ці брови! Ти повинна почати помічати їх ріст.</p>
+            </div>
+            <div class = "rules-items">
+                <p class = "date-rules">4 ТИЖДЕНЬ</p>
+                <img src = "assets/week4.png" class = "img-redefining">
+                <p class = "explanation">Тепер ти можеш мати на 100% свої власні, помітно густіші та повніші брови!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class = "dad_attribute">
+    <div class = "attribute">
+        <div class = "left-attribute">
+            <p class = "attribute-logo">Що Робить ForChics Особливим</p>
+            <p class = "attribute-text">Наша НОВА та вдосконалена формула сироватки для росту брів містить рослинні екстракти,
+                пептиди та протеїни, які природним чином сприяють росту брів.</p>
+        </div>
+        <div class="right-attribute">
+            <div class="comparison-header">
+                <div class="product-col product-forchics">
+                    <img src="assets/forbrow.png" class = "other-product1">
+                    <span class="product-label1">FORCHICS</span>
+
+                </div>
+                <div class="product-col product-others">
+                    <img src="assets/other_product.webp" class = "other-product">
+                    <span class="product-label">ІНШІ</span>
+
+                </div>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="feature-label-first"></div>
+                <div class="check-col forchics-check"></div>
+                <div class="check-col others-check feature-label-second"></div>
+
+                <div class="feature-label">Без гормонів</div>
+                <div class="check-col forchics-check"><img src="assets/checked.webp"></div>
+                <div class="check-col others-check"><img src="assets/cancel.webp"></div>
+
+                <div class="feature-label">Безболісний</div>
+                <div class="check-col forchics-check"><img src="assets/checked.webp"></div>
+                <div class="check-col others-check"><img src="assets/cancel.webp"></div>
+
+                <div class="feature-label">Доступний</div>
+                <div class="check-col forchics-check"><img src="assets/checked.webp"></div>
+                <div class="check-col others-check"><img src="assets/cancel.webp"></div>
+
+                <div class="feature-label">Безпечний для щоденного використання</div>
+                <div class="check-col forchics-check"><img src="assets/checked.webp"></div>
+                <div class="check-col others-check"><img src="assets/cancel.webp"></div>
+
+                <div class="feature-label feature-label-third">Гарантія зростання</div>
+                <div class="check-col forchics-check"><img src="assets/checked.webp"></div>
+                <div class="check-col others-check feature-label-fourth"><img src="assets/cancel.webp"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class = "dad_guarantee">
+    <div class = "guarantee">
+        <span class="guarantee-badge"></span>
+        <div class = "left-picture-guarantee">
+            <img src="assets/guarantee.webp">
+            <img src="assets/guarantee.png" class="guarantee-badge mobile-view">
+        </div>
+        <div class="right-info-guarantee">
+            <img src="assets/guarantee.png" class="guarantee-badge">
+            <h2>Гарантія зростання</h2>
+
+            <div class="guarantee-body-wrapper">
+                <div class="guarantee-initial-content">
+                    <p>
+                        Зростайте і сяйте або поверніть свої гроші. Ми впевнені, що ви полюбите продукти ForChics!
+                        Якщо ви не побачите результатів, ви можете претендувати на повернення грошей.
+                        <br>
+                        Шлях до зростання у кожного свій, проте ми настільки впевнені в ефективності наших сироваток,
+                        що пропонуємо 60-денний безризиковий пробний період!
+                    </p>
+                </div>
+                <button class="toggle-details-btn">Читайте, як</button>
+                <div class="collapsible-text" id="guarantee-details">
+                    <p>
+                        Використовуйте сироватку для покращення брів ForLash протягом 60 днів.
+                        Документуйте результати щотижневими фотографіями та обов'язково дотримуйтесь наших рекомендацій щодо використання.
+                        Якщо після закінчення цього періоду ви не побачите жодних результатів, хоча дотримувались наших рекомендацій, ви маєте право на гарантію росту.
+                        Перейдіть на сторінку «Гарантія росту», щоб подати заявку.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class = "dad_faq" id = "dad_faq">
+    <div class = "faq">
+        <p class = "faq-p">Часті запитання</p>
+        <div class="faq-item">
+            <div class="faq-header">
+                Які інгредієнти використовуються в сироватці для брів ForChics?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Склад: очищена вода, женьшень, екстракт лігуструму люцидум, бутиленгліколь,
+                    екстракт ганодерми синенсис, екстракт розмарину лікарського,
+                    екстракт кори магнолії лікарської, біотіноїл трипептид-4,
+                    міристоїл пентапептид-17, бензоат натрію, сорбат калію, вітамін B7 (біотин),
+                    токоферол, вітамін E
+                </p>
+                <p class="note-disclaimer">
+                    *Примітка: Рекомендуємо використовувати продукти ForChics протягом 1-2 місяців,
+                    при температурі від 36° до 77 °F та щільно закривати кришку після використання.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Яких результатів я можу очікувати і коли?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>З сироваткою для росту брів ForChics ви можете побачити результати вже через 4 тижні,
+                    а до 4-го тижня довжина брів збільшиться на 70%.
+                    Однак кожна людина індивідуальна, тому будьте терплячі до себе.
+                    Не забудьте зробити фотографії на 1-й, 15-й і 30-й день,
+                    щоб отримати право на нашу гарантію росту!
+                </p>
+                <p class="note-disclaimer">
+                    Важливо пам'ятати, що все хороше вимагає часу!
+                    Брови не відростуть за одну ніч, тому вам потрібно буде регулярно застосовувати засіб.
+                    Будьте терплячі.
+                    Густі брови вже не за горами!
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Як це працює?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Наш пептидний комплекс, що стимулює ріст брів,
+                    підтримує природний цикл оновлення брів, роблячи їх густішими,
+                    виразнішими та здоровішими. Формула з високим вмістом мінералів
+                    допомагає поповнити брови необхідними
+                    білками та вітамінами, які надають їм блиск і сяйво.
+                </p>
+                <p class="note-disclaimer">
+                    Унікальні зволожуючі речовини забезпечують чудове зволоження,
+                    утримуючи вологу та покращуючи гнучкість і еластичність.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Як часто слід його використовувати?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Ви повинні використовувати сироватку для брів ForChics один або два рази на день!
+                    Для досягнення максимального результату ми рекомендуємо застосовувати її 2 рази на день протягом перших 2 місяців!
+                    Перед нанесенням переконайтеся, що шкіра чиста.
+                    Якщо ви пропустили один день, просто продовжуйте на наступний день :)
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Чи має він якісь побічні ефекти?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Наша формула спеціально розроблена, щоб бути м'якою і безпечною для всіх, включаючи онкологічних хворих!
+                    Наші продукти не містять парабенів, а також не містять глютену і є веганськими.
+                    Однак все одно слід уникати потрапляння формули в очі.
+                    У разі потрапляння в очі ретельно промийте їх водою.
+                </p>
+                <p class="note-disclaimer">
+                    Крім того, якщо ви лікуєтеся від будь-яких очних захворювань, використовуйте сироватку для росту брів ForChics під наглядом лікаря. Зберігайте в недоступному для дітей місці.
+                    Перед нанесенням рекомендуємо вимити руки та обличчя м'яким милом і водою.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Чи можна його використовувати під час вагітності або годування груддю?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Якщо ви вагітні або годуєте груддю, перед використанням рекомендуємо проконсультуватися з лікарем.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                На скільки вистачає однієї туби сироватки для брів ForChics?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Один тюбик сироватки для брів ForChics вистачить на 1-2 місяці, залежно від частоти застосування.
+                </p>
+                <p class="note-disclaimer">
+                    Порада від професіоналів: для досягнення найкращих результатів рекомендуємо застосовувати сироватку двічі на день протягом перших 2 місяців!
+                    Також для досягнення максимального ефекту рекомендуємо замінювати старі флакони кожні 2 місяці.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Цей продукт не тестувався на тваринах?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Так, всі продукти ForChics не тестуються на тваринах, оскільки ми ніколи не тестували і ніколи не будемо тестувати наші продукти на тваринах.
+                    Ми також не співпрацюємо з виробниками, які проводять тестування на тваринах.
+                    Ви можете бути спокійні, знаючи, що ForChics на 100% не тестує свої продукти на тваринах!
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Чи можу я використовувати його, якщо у мене є татуювання брів або мікроблейдінг?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Так, нашу сироватку для брів можна використовувати з татуюванням брів або мікроблейдингом.
+                    Вона допомагає живити та стимулювати ріст ваших природних брів, але будьте обережні в області нанесення.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Чи можу я використовувати сироватку для брів ForChics, якщо у мене чутлива шкіра або алергія?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Якщо у вас чутлива шкіра або в анамнезі є алергічні реакції, рекомендуємо спочатку провести тест на алергію.
+                    Нанесіть невелику кількість сироватки на зап'ястя або за вухом і почекайте 24 години, щоб перевірити, чи немає ознак подразнення.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Чи вплине сироватка для брів на природний колір моїх брів?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Ні, він спрямований на стимулювання росту і збільшення густоти, а не на зміну природного кольору брів.
+                    Ваші брови залишаться того ж відтінку, але стануть більш густими і виразними.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Як слід зберігати продукт для досягнення оптимальних результатів?
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Зберігайте сироватку для росту брів ForChics у прохолодному, сухому місці, подалі від прямих сонячних променів.
+                    Це допоможе зберегти активні інгредієнти та забезпечить ефективність сироватки протягом усього терміну придатності.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Що входить до комплекту
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p>Кожна упаковка містить сироватку для росту брів ForChics, вимірювальний інструмент та інструкцію.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Як користуватися
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p class="note-disclaimer">
+                    <strong>Крок 1:</strong> Скрабуйте-скрабуйте! Ретельно вимийте обличчя, щоб видалити залишки косметики та забруднення.
+                </p>
+                <p class="note-disclaimer">
+                    <strong>Крок 2:</strong> За допомогою аплікатора нанесіть засіб на брови, проводячи ним по них.
+                </p>
+                <p class="note-disclaimer">
+                    <strong>Крок 3:</strong> Дайте сироватці повністю висохнути, перш ніж завершувати процедуру. Повторюйте ці кроки щодня.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                Доставка та повернення
+                <span class="icon"></span>
+            </div>
+            <div class="faq-content">
+                <p class="note-disclaimer">
+                    <strong>Інформація про доставку</strong>
+                </p>
+                <p class="note-disclaimer">
+                    Щоб переглянути всі доступні способи доставки та будь-яку інформацію, пов'язану з перебоями або затримками в доставці, відвідайте статтю
+                    <a href="#">«Інформація про доставку»</a>.
+                </p>
+                <p class="note-disclaimer">
+                    <strong>Інформація про повернення</strong>
+                </p>
+                <p class="note-disclaimer">
+                    Якщо ваше замовлення є неправильним, несправним або відсутнім, надішліть електронний лист на адресу hello@forchics.com, і ми зможемо обговорити це з вами.
+                    Якщо ви незадоволені отриманими товарами, ви можете повернути їх нам протягом 60 днів з моменту отримання, за умови, що ви маєте право на нашу Гарантію зростання.
+                    Щоб дізнатися більше про нашу Гарантію зростання, перейдіть до статті «Політика повернення».
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class = "dad_proposal">
+    <div class = "proposal">
+        <div class="left-proposal">
+            <div class="chart-bars">
+                <div class="chart-column forchics-col">
+                    <div class="chart-label1">ForChics</div>
+                    <div class="chart-price">24$</div>
+                </div>
+                <div class="chart-column others-col">
+                    <div class="chart-label">Інші бренди</div>
+                    <div class="chart-price">$100+</div>
+                </div>
+            </div>
+            <div class="chart-caption">СЕРЕДНЯ МІСЯЧНА ВАРТІСТЬ ПІДПИСКИ FORCHICS</div>
+        </div>
+        <div class = "right-proposal">
+            <h3>Отримайте Густіші Брови За Менші Гроші</h3>
+            <p class="proposal-desc">
+                Наша передплата на доставку ForChics в середньому коштує менше на місяць, ніж стандартна ціна в галузі.
+                У порівнянні з рецептурними сироватками для брів або мікроблейдингом, ForBrow економить вам понад 100 доларів щомісяця!
+            </p>
+            <button class="try-now-btn">
+                <span class="emoji">👉🏼</span>
+                <span class="text">СПРОБУЙТЕ ЗАРАЗ І ЗАОЩАДЖУЙТЕ</span>
+            </button>
+            <div class = "last-desc">
+                <span class="rating-text">★★★★★</span>
+                <p>Оцінка 4,9/5 від понад 72 500 задоволених клієнтів</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="carousel">
+    <div class="carousel-item">
+        <img src="assets/officialkalo.jpg">
+        <span class="handle"><span class="at-symbol">@</span>officalkalo</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/stela_remi.jpg">
+        <span class="handle"><span class="at-symbol">@</span>stela_remi</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/justpamella.jpg">
+        <span class="handle"><span class="at-symbol">@</span>justpamella</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/megan.jpg">
+        <span class="handle"><span class="at-symbol">@</span>trulymeganblog</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/rhibrai.jpg">
+        <span class="handle"><span class="at-symbol">@</span>rhibrai</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/kim_kine.png">
+        <span class="handle"><span class="at-symbol">@</span>Kim_kine</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/lalatheislandgal.png">
+        <span class="handle"><span class="at-symbol">@</span>lalatheislandgal</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/shareemichelle.JPG">
+        <span class="handle"><span class="at-symbol">@</span>shareemichelle_</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/therubirose.JPG">
+        <span class="handle"><span class="at-symbol">@</span>therubirose_</span>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/sophiemudd.png">
+        <span class="handle"><span class="at-symbol">@</span>sophiemudd</span>
+    </div>
+</div>
+
+
+<div class = "dad_reviews">
+    <div class = "reviews">
+        <p class = "reviews-name">Відгуки клієнтів</p>
+        <div class = "reviews-summary">
+            <strong>4,9</strong>
+            <span class="rating-text">★★★★★</span>
+            <p>На основі 1390 відгуків</p>
+        </div>
+        <div class = "reviews-summary mobile-view">
+            <div class = "reviews-review mobile-view">
+                <strong>4,9</strong>
+                <span class="reviews-rating mobile-view">★★★★★</span>
+            </div>
+            <p>На основі 1390 відгуків</p>
+        </div>
+        <div class = "rating-reviews">
+            <div class="rating-group">
+                <div class="rating-item-review">
+                    <strong>Як би ви оцінили ефективність?</strong>
+                    <span class="rating-scale-review">
+                        <span class="scale-segment"></span>
+                        <span class="scale-segment"></span>
+                        <span class="scale-segment"></span>
+                        <span class="scale-segment active"></span>
+                        <span class="scale-segment"></span>
+                    </span>
+                </div>
+                <div class="rating-item-review">
+                    <strong>Як би ви оцінили швидкість отримання результатів?</strong>
+                    <span class="rating-scale-review">
+                        <span class="scale-segment"></span>
+                        <span class="scale-segment"></span>
+                        <span class="scale-segment"></span>
+                        <span class="scale-segment"></span>
+                        <span class="scale-segment active"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-reviews">
+            <div class="tab-content-wrapper">
+                <div class="tab-item active">
+                    <span class="tab-label">Відгуки</span>
+                    <span class="tab-count">1390</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="dad_comment">
+    <div class="comment">
+        <div class="comment-header">
+            <div class="user-info">
+                <div class="avatar">IC</div>
+                <div class="name-status">
+                    <span class="user-name">Ірма С.</span>
+                    <span class="verified-buyer">Перевірений покупець</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <div class="date-comment">04/06/2024</div>
+        </div>
+
+        <div class="rating-sliders">
+            <div class="rating-item">
+                <p class="question">Як ви оцінюєте ефективність?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Вік: 55 - 64</p>
+            </div>
+
+            <div class="rating-item">
+                <p class="question">Як би ви оцінили швидкість отримання результатів?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment">Бідний</span>
+                    <span class="scale-segment">Добре</span>
+                    <span class="scale-segment">Відмінно</span>
+                </span>
+                <p class="answer">Моя проблема: надмірно вищипані брови</p>
+            </div>
+        </div>
+
+        <div class="review-body">
+            <h3 class="review-title">Брови</h3>
+            <p class="review-text1">Поки що я бачу деякі рішення. Я продовжуватиму купувати цей товар 😊</p>
+        </div>
+
+        <div class="review-footer">
+            <p class="helpfulness-text">Це було корисно?</p>
+            <div class="votes">
+                <span class="thumb-up">👍 4</span>
+                <span class="thumb-down">👎 1</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dad_comment">
+    <div class="comment">
+        <div class="comment-header">
+            <div class="user-info">
+                <div class="avatar">C</div>
+                <div class="name-status">
+                    <span class="user-name">Сабріна</span>
+                    <span class="verified-buyer">Перевірений покупець</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <div class="date-comment">04/05/2024</div>
+        </div>
+
+        <div class="rating-sliders">
+            <div class="rating-item">
+                <p class="question">Як ви оцінюєте ефективність?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Вік: 35 - 44</p>
+            </div>
+
+            <div class="rating-item">
+                <p class="question">Як би ви оцінили швидкість отримання результатів?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Моя проблема: перевищипані брови, рідкі брови, лисини</p>
+            </div>
+        </div>
+
+        <div class="review-body">
+            <h3 class="review-title">Дивовижно</h3>
+            <p class="review-text1">У мене були дуже рідкі, надмірно вищипані брови.
+                Я не думала, що це допоможе, але була в розпачі і не мала чого втрачати.
+                На мій подив, це дійсно працює, але не варто чекати чудес, це не відбувається за одну ніч.
+                Після 8 тижнів дворазового нанесення препарату я помітила величезну різницю.
+                Мені більше не потрібно користуватися олівцем для брів, я дуже задоволена результатом.</p>
+        </div>
+
+        <div class="review-footer">
+            <p class="helpfulness-text">Це було корисно?</p>
+            <div class="votes">
+                <span class="thumb-up">👍 15</span>
+                <span class="thumb-down">👎 4</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dad_comment">
+    <div class="comment">
+        <div class="comment-header">
+            <div class="user-info">
+                <div class="avatar">МТ</div>
+                <div class="name-status">
+                    <span class="user-name">Мері Т.</span>
+                    <span class="verified-buyer">Перевірений покупець</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <div class="date-comment">04/04/2024</div>
+        </div>
+
+        <div class="rating-sliders">
+            <div class="rating-item">
+                <p class="question">Як ви оцінюєте ефективність?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Вік: 55 - 64</p>
+            </div>
+
+            <div class="rating-item">
+                <p class="question">Як би ви оцінили швидкість отримання результатів?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Моя проблема: перевищипані брови, рідкі брови</p>
+            </div>
+        </div>
+
+        <div class="review-body">
+            <h3 class="review-title">Сироватка для покращення брів</h3>
+            <p class="review-text1">Дуже подобається цей продукт, він дійсно працює!
+                Мої брови добре заповнюються, дуже рекомендую.</p>
+        </div>
+
+        <div class="review-footer">
+            <p class="helpfulness-text">Це було корисно?</p>
+            <div class="votes">
+                <span class="thumb-up">👍 8</span>
+                <span class="thumb-down">👎 1</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dad_comment">
+    <div class="comment">
+        <div class="comment-header">
+            <div class="user-info">
+                <div class="avatar">МФ</div>
+                <div class="name-status">
+                    <span class="user-name">Марія Ф.</span>
+                    <span class="verified-buyer">Перевірений покупець</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <div class="date-comment">04/03/2024</div>
+        </div>
+
+        <div class="rating-sliders">
+            <div class="rating-item">
+                <p class="question">Як ви оцінюєте ефективність?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Вік: 45 - 54</p>
+            </div>
+
+            <div class="rating-item">
+                <p class="question">Як би ви оцінили швидкість отримання результатів?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Моя проблема: перевищипані брови, рідкі брови</p>
+            </div>
+        </div>
+
+        <div class="review-body">
+            <h3 class="review-title">Відмінно</h3>
+            <p class="review-text1">Це був чудовий досвід.</p>
+        </div>
+
+        <div class="review-footer">
+            <p class="helpfulness-text">Це було корисно?</p>
+            <div class="votes">
+                <span class="thumb-up">👍 1</span>
+                <span class="thumb-down">👎 5</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dad_comment">
+    <div class="comment">
+        <div class="comment-header">
+            <div class="user-info">
+                <div class="avatar">ДТ</div>
+                <div class="name-status">
+                    <span class="user-name">Даніель Т.</span>
+                    <span class="verified-buyer">Перевірений покупець</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <div class="date-comment">04/06/2024</div>
+        </div>
+
+        <div class="rating-sliders">
+            <div class="rating-item">
+                <p class="question">Як ви оцінюєте ефективність?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Вік: 25 - 34</p>
+            </div>
+
+            <div class="rating-item">
+                <p class="question">Як би ви оцінили швидкість отримання результатів?</p>
+                <span class="rating-scale">
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                    <span class="scale-segment"></span>
+                </span>
+                <div class="rating-labels">
+                    <span class="label-start">Бідний</span>
+                    <span class="label-middle">Добре</span>
+                    <span class="label-end">Відмінно</span>
+                </div>
+                <p class="answer">Моя проблема: рідкі брови, короткі вії, випадання волосся через гормональні зміни</p>
+            </div>
+        </div>
+
+        <div class="review-body">
+            <h3 class="review-title">Діє повільно</h3>
+            <p class="review-text1">Користуюся вже 2 місяці, спочатку використовувала двічі на день, а зараз використовую двічі на день, тому що флакон не вистачає надовго.
+                Я бачу поліпшення, це не щось кардинальне, якщо ви шукаєте невелику допомогу, але різниця є!</p>
+        </div>
+
+        <div class="review-footer">
+            <p class="helpfulness-text">Це було корисно?</p>
+            <div class="votes">
+                <span class="thumb-up">👍 5</span>
+                <span class="thumb-down">👎 3</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="try-block">
+    <div class="try">
+        <h3>Спробуйте нас без ризику</h3>
+
+        <div class="try-image">
+
+            <div class="usp-item">
+                <img src="assets/shipping.png" class="usp-icon">
+                <h4 class="usp-title">Безкоштовна доставка</h4>
+                <p class="usp-desc">Безкоштовна доставка всіх замовлень.</p>
+            </div>
+
+            <div class="usp-item">
+                <img src="assets/trial.png" class="usp-icon">
+                <h4 class="usp-title">60-денний пробний період</h4>
+                <p class="usp-desc">Спробуйте нас протягом 60 ночей. Не сподобалося? Повний повернення коштів.</p>
+            </div>
+
+            <div class="usp-item">
+                <img src="assets/returns.png" class="usp-icon">
+                <h4 class="usp-title">Легке повернення</h4>
+                <p class="usp-desc">Проста політика повернення для вашого спокою.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class = "icon-row">
+    <div class = "icon-special">
+        <img src="assets/sustainably.png">
+        <img src="assets/cruelty.png">
+        <img src="assets/effective.png">
+        <img src="assets/paraben.png">
+        <img src="assets/sulfate.png">
+        <img src="assets/peg.png">
+    </div>
+</div>
+
+<footer>
+    <div class = "footer-block">
+        <div class = "image">
+            <img src="assets/logosite.png" class="img-footer-logo">
+        </div>
+        <div class = "info-footer-block">
+            <p class = "footer-links">Політики</p>
+            <a href="https://creamy-fabrics.shop/privacy.html" class = "footer-links">Політика конфіденційності</a>
+            <a href="https://creamy-fabrics.shop/terms.html" class = "footer-links">Публічна угода</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src = "js/countdown_js.js"></script>
+<script src = "js/loginIcon.js"></script>
+<script src = "js/modal-overlay_js.js"></script>
+<script src="js/rules_js.js"></script>
+<script src = "js/accordion_js.js"></script>
+<script src = "js/guarantee_js.js"></script>
+<script src = "js/carousel_js.js"></script>
+<script src = "js/faq_js.js"></script>
+<script src = "js/try_js.js"></script>
+<script src = "js/icon-row_js.js"></script>
+<script src = "js/footer-banner_js.js"></script>
+<script src = "js/footer-icon_js.js"></script>
+<script src = "js/mainImage_js.js"></script>
+<script src = "js/filters_mobile.js"></script>
+</body>
+</html>

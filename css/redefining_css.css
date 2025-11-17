@@ -1,0 +1,204 @@
+.redefining{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 60px 40px 60px;
+    background: #ff6d84;
+}
+
+.redefining-logo{
+    font-weight: normal;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+.redefining-more{
+    text-align: center;
+    padding: 30px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.redefining-more.mobile-view{
+    display: none;
+}
+
+.product-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.redefining-items{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.product-img img{
+    height: 185px;
+    width: 185px;
+}
+
+@media (max-width: 1024px){
+    .redefining{
+        justify-content: flex-start;
+        padding: 40px;
+        width: 100%;
+    }
+
+    .product-img img{
+        height: 127px;
+        width: 127px;
+    }
+}
+
+@media (max-width: 768px){
+    .redefining{
+        padding: 40px;
+    }
+
+    .redefining-logo{
+        font-size: 36px;
+    }
+
+    .product-img{
+        display: flex;
+        flex-direction: row;
+        padding: 40px 0 0;
+    }
+
+    .redefining-items{
+        width: auto;
+    }
+
+    .redefining-items img{
+        height: 84px;
+        width: 84px;
+    }
+
+    .redefining-more{
+        display: none;
+    }
+
+    .redefining-more.mobile-view{
+        display: flex;
+        width: 100%;
+        padding: 15px 0 0;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px){
+    .redefining{
+        padding: 35px 24px;
+    }
+
+    .redefining-logo{
+        font-size: 24px;
+    }
+
+    .product-img{
+        display: flex;
+        flex-direction: row;
+        padding: 25px 0 0;
+    }
+
+    .redefining-items{
+        width: auto;
+    }
+
+    .redefining-items img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .redefining-more{
+        display: none;
+    }
+
+    .redefining-more.mobile-view{
+        display: flex;
+        width: 100%;
+        padding: 15px 0 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 375px){
+    .redefining{
+        padding: 35px 24px;
+    }
+
+    .redefining-logo{
+        font-size: 24px;
+    }
+
+    .product-img{
+        display: flex;
+        flex-direction: row;
+        padding: 25px 0 0;
+    }
+
+    .redefining-items{
+        width: auto;
+    }
+
+    .redefining-items img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .redefining-more{
+        display: none;
+    }
+
+    .redefining-more.mobile-view{
+        display: flex;
+        width: 100%;
+        padding: 15px 0 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px){
+    .redefining{
+        padding: 35px 24px;
+    }
+
+    .redefining-logo{
+        font-size: 24px;
+    }
+
+    .product-img{
+        display: flex;
+        flex-direction: row;
+        padding: 25px 0 0;
+    }
+
+    .redefining-items{
+        width: auto;
+    }
+
+    .redefining-items img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .redefining-more{
+        display: none;
+    }
+
+    .redefining-more.mobile-view{
+        display: flex;
+        width: 100%;
+        padding: 15px 0 0;
+        font-size: 16px;
+    }
+}

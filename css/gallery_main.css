@@ -1,0 +1,81 @@
+.product-gallery {
+    height: 100%;
+    width: 100%;
+}
+
+.main-image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#mainImage {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.thumbnail-list {
+    display: flex;
+    gap: 8px;
+}
+
+.thumbnail {
+    width: 13%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.thumbnail img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.thumbnail.active {
+    border-color: #ff6c84;
+    border-radius: 6px;
+}
+
+.zoom-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.zoom-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: #333;
+    stroke-width: 2.5px;
+}
+
+#mainImageWrapper.cursor-left {
+    cursor: url('/assets/cursor_left.png'), auto;
+}
+
+#mainImageWrapper.cursor-right {
+    cursor: url('/assets/cursor_right.png'), auto;
+}
+
+@media (max-width: 320px) {
+    .main-image-container{
+        width: 100%;
+    }
+
+    .thumbnail-list{
+        justify-content: space-around;
+        width: 100%;
+    }
+}
