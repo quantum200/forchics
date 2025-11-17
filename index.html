@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/try-block_css.css">
     <link rel="stylesheet" href="css/icon-row_css.css">
     <link rel="stylesheet" href="css/footer_css.css">
+    <link rel="stylesheet" href="css/modal-overlay_css.css">
     <title>Eyebrow Growth Serum: Vegan</title>
 </head>
 <body>
@@ -70,11 +71,87 @@
 <div class="header-nav">
     <img src="assets/menu.png" class="header-nav-img mobile-view">
     <img src="assets/logosite.png" class="header-logo">
-    <div class = "login">
-        <img src="assets/bag.png" class = "login-img">
+    <div class="login" id="cart-icon-clickable">
+        <img src="assets/bag.png" class="login-img">
+        <span class="cart-count">0</span>
     </div>
 </div>
 
+<div class="modal-overlay" id="cart-modal">
+    <div class="shopping-cart-content">
+        <div class="cart-header">
+            <h3>Корзина</h3>
+            <span class="close-btn">&times;</span>
+        </div>
+
+        <div class="promo-strip">
+            <p>Чудовий вибір! Ось ваші товари:</p>
+            <div class="animated-strip"></div>
+            <p class="free-shipping-msg">Вітаємо! Ви отримали БЕЗКОШТОВНУ доставку</p>
+        </div>
+
+        <div class="cart-items-container" id="cart-items-container">
+        </div>
+        <div class="cart-footer">
+            <div class="summary-row">
+                <span>Доставка</span>
+                <span class="shipping-cost">Безкоштовно</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>Загалом</span>
+                <span class="old-total">$0</span> <span class="current-total">$0</span> </div>
+
+            <button class="checkout-btn">
+                🔒ПРОДОВЖИТИ ДО БЕЗПЕЧНОЇ ОПЛАТИ
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="checkout-modal" style="display: none;">
+    <div class="checkout-form-content">
+        <div class="checkout-header">
+            <h3>Введіть ваші дані</h3>
+            <span class="close-checkout-btn">&times;</span>
+        </div>
+
+        <form id="order-form">
+            <label for="user-name">Ім'я:</label>
+            <input type="text" id="user-name" name="name" required>
+
+            <label for="user-phone">Номер телефону:</label>
+            <input type="tel" id="user-phone" name="phone" value="+38" required>
+
+            <button type="submit" class="order-submit-btn">Замовити</button>
+        </form>
+    </div>
+</div>
+
+<template id="cart-item-template">
+    <div class="cart-item" data-item-id="1">
+        <div class="item-details">
+            <img src="assets/picture1.jpg" alt="Serum" class="item-img">
+            <div class="item-info">
+                <h4>Сироватка для росту брів</h4>
+                <p>1 флакон</p>
+                <p class="subscription">1 місяць передплати</p>
+
+                <div class="item-controls">
+                    <div class="quantity-control">
+                        <button class="qty-btn minus-btn">-</button>
+                        <input type="text" value="1" readonly class="qty-input">
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                    <button class="remove-btn">Видалити</button>
+                </div>
+            </div>
+        </div>
+        <div class="item-price">
+            <span class="old-price">$39</span>
+            <span class="current-price">$22</span>
+        </div>
+    </div>
+</template>
 <div class="banner-info">
     <span class = "span-header-banner desktop-view">
         <span class="item-header"><img src = "assets/truck.png"> Безкоштовна доставка сьогодні</span>
@@ -129,7 +206,7 @@
         <div class = "text-status">
             <span class="status-dot"></span>В наявності - Кількість обмежена
         </div>
-        <button class = "cart">ДОДАТИ В КОШИК</button>
+        <button class = "cart" id="add-to-cart-btn">ДОДАТИ В КОШИК</button>
         <div class = "order"><img src="assets/usa.png">Замовте зараз, отримайте<span class="order-date"> Четвер, 13 листопада</span></div>
         <hr>
         <div class="accordion">
@@ -1211,6 +1288,8 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src = "js/countdown_js.js"></script>
+<script src = "js/loginIcon.js"></script>
+<script src = "js/modal-overlay_js.js"></script>
 <script src="js/rules_js.js"></script>
 <script src = "js/accordion_js.js"></script>
 <script src = "js/guarantee_js.js"></script>

@@ -4,6 +4,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body.no-scroll,
+html.no-scroll {
+    overflow: hidden !important;
+    height: 100vh !important;
+}
+
 body, html {
     margin: 0;
     padding: 0;
