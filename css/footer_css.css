@@ -85,28 +85,7 @@ footer {
     }
 }
 
-@media (max-width: 425px) {
-    footer {
-        width: 100%;
-        padding: 48px 0;
-        margin: 0;
-    }
-
-    .footer-block {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 90%;
-    }
-
-    .img-footer-logo{
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 320px) {
+@media (max-width: 500px) {
     footer {
         width: 100%;
         padding: 48px 0;
