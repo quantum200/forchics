@@ -4,168 +4,47 @@ footer {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 72px 0 50px;
-    margin-bottom: 70px;
+    padding: 72px 50px;
+    margin-bottom: 50px;
     overflow: hidden;
-    background-color: #222222;
+    background-color: #f8f8f8;
 }
 
 .footer-block {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 90%;
-}
-
-.title-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 40px 40px;
-}
-
-.title-footer h2{
-    font-size: 26px;
-    color: white;
-    margin-bottom: 22px;
-}
-
-.title-footer p{
-    font-size: 14px;
-    color: white;
-}
-
-.subscribe-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 600px;
-    max-width: 100%;
-    margin-top: 20px;
-}
-
-.subscribe-form input {
-    flex-grow: 1;
-    height: 44px;
-    padding: 0 15px;
-    font-size: 16px;
-    color: #333;
-    outline: none;
-    border-radius: 5px;
-
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.coupon-btn {
-    flex-shrink: 0;
-    height: 44px;
-    padding: 0 20px;
-    background-color: #ff6c84;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.2s;
-}
-
-.coupon-btn:hover {
-    background-color: #e55a73;
-}
-
-.info-footer{
-    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 90%;
-    height: 235px;
-    color: white;
+    width: 100%;
 }
 
-.info-column-footer{
+.info-footer-block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 20%;
-    height: 100%;
-    padding: 20px 10px 10px 10px;
-    border-bottom: 1px solid #ccc;
+    align-items: flex-end;
 }
 
-.info-column-footer img{
-    display: block;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 10px;
+.img-footer-logo{
+    width: 200px;
+    height: 30px;
 }
 
-.info-column-footer h3{
-    font-size: 18px;
-    margin: 0 0 20px;
-}
-
-.info-column-footer a{
+.footer-links {
+    font-size: 14px;
     text-decoration: none;
-    color: white;
-    padding: 6px 0 0;
+    color: #333333;
+
 }
 
-.info-column-footer a:nth-of-type(1){
-    padding-top: 0;
+.footer-links:first-child {
+    font-weight: bold;
+    color: #000000;
 }
 
-.social-icons-wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 100%;
-    overflow: hidden;
-}
-
-.social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 55px;
-    background: none;
-    border: 1px solid #868282;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.social-link:first-child {
-    padding-top: 6px !important;
-}
-
-.social-link img {
-    width: 25px;
-    height: 25px;
-    display: block;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.social-link:hover {
-    background-color: #fff;
-}
-
-.social-link:hover img {
-    transform: none;
-}
 
 @media (max-width: 1024px) {
     footer{
-        padding-bottom: 0;
+        margin-bottom: 50px;
     }
 
     .info-footer {
@@ -176,175 +55,33 @@ footer {
         justify-content: flex-start;
     }
 
-    .info-column-footer {
-        width: 100%;
-        height: auto;
-        border-bottom: none;
-    }
 
-    .social-icons-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        overflow: hidden;
-    }
-
-    .social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 55px;
-        width: auto;
-        background: none;
-        border: 1px solid #868282;
-        color: white;
-        text-decoration: none;
-        position: relative;
-        overflow: hidden;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .social-link:first-child {
-        padding-top: 6px !important;
-    }
-
-    .social-link img {
-        width: 25px;
-        height: 25px;
-        display: block;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-    }
-
-    .social-link:hover {
-        background-color: #fff;
-    }
-
-    .social-link:hover img {
-        transform: none;
-    }
 }
 
 @media (max-width: 768px) {
     footer {
         width: 100%;
-        padding: 48px 0;
+        padding: 48px;
         margin: 0;
+        margin-bottom: 50px;
     }
 
     .footer-block {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 90%;
-    }
-
-    .title-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 40px 40px;
-    }
-
-    .title-footer h2{
-        font-size: 26px;
-        text-align: center;
-    }
-
-    .subscribe-form {
-        gap: 10px;
-        width: 100%;
-    }
-
-    .subscribe-form input {
-        width: 70%;
-        font-size: 12px;
-    }
-
-    .coupon-btn {
-        width: 30%;
-        font-size: 12px;
-        height: 40px;
-        padding: 0 5px;
-    }
-
-    .coupon-btn:hover {
-        background-color: #e55a73;
-    }
-
-    .info-footer{
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 100%;
-        height: auto;
-        padding: 0 40px;
-    }
-
-    .info-column-footer {
-        width: calc(50% - 10px);
-        height: auto;
-        padding: 0 0 20px 0;
-
-        border-bottom: none;
-    }
-
-    .info-column-footer img{
-        margin-bottom: 10px;
-    }
-
-    .info-column-footer a{
-        font-size: 15px;
-    }
-
-    .info-column-footer a:nth-of-type(1){
-        padding-top: 0;
-    }
-
-    .social-icons-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        overflow: hidden;
-    }
-
-    .social-link {
-        display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        height: 55px;
-        width: auto;
-        background: none;
-        border: 1px solid #868282;
-        color: white;
-        text-decoration: none;
-        position: relative;
-        overflow: hidden;
-        transition: background-color 0.3s ease, transform 0.3s ease;
+        width: 100%;
     }
 
-    .social-link:first-child {
-        padding-top: 6px !important;
+    .info-footer-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
-    .social-link img {
-        width: 25px;
-        height: 25px;
-        display: block;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-    }
-
-    .social-link:hover {
-        background-color: #fff;
-    }
-
-    .social-link:hover img {
-        transform: none;
+    .img-footer-logo{
+        margin-bottom: 30px;
     }
 }
 
@@ -364,101 +101,8 @@ footer {
         width: 90%;
     }
 
-    .title-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 40px 40px;
-    }
-
-    .subscribe-form {
-        gap: 10px;
-        width: auto;
-    }
-
-    .subscribe-form input {
-        width: 50%;
-        font-size: 12px;
-    }
-
-    .coupon-btn {
-        width: 50%;
-    }
-
-    .coupon-btn:hover {
-        background-color: #e55a73;
-    }
-
-    .info-footer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        height: auto;
-        padding: 20px 40px;
-    }
-
-    .info-column-footer {
-        width: calc(50% - 15px);
-        height: auto;
-        padding: 0 0 20px 0;
-        border-bottom: none;
-    }
-
-    .info-column-footer img{
-        margin-bottom: 10px;
-    }
-
-    .info-column-footer a{
-        font-size: 15px;
-    }
-
-    .info-column-footer a:nth-of-type(1){
-        padding-top: 0;
-    }
-
-    .social-icons-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        overflow: hidden;
-    }
-
-    .social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 55px;
-        width: auto;
-        background: none;
-        border: 1px solid #868282;
-        color: white;
-        text-decoration: none;
-        position: relative;
-        overflow: hidden;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .social-link:first-child {
-        padding-top: 6px !important;
-    }
-
-    .social-link img {
-        width: 25px;
-        height: 25px;
-        display: block;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-    }
-
-    .social-link:hover {
-        background-color: #fff;
-    }
-
-    .social-link:hover img {
-        transform: none;
+    .img-footer-logo{
+        margin-bottom: 30px;
     }
 }
 
@@ -466,7 +110,7 @@ footer {
     footer {
         width: 100%;
         padding: 48px 0;
-        margin: 0;
+        margin-bottom: 50px;
     }
 
     .footer-block {
@@ -478,100 +122,7 @@ footer {
         width: 90%;
     }
 
-    .title-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 40px 40px;
-    }
-
-    .subscribe-form {
-        gap: 10px;
-        width: auto;
-    }
-
-    .subscribe-form input {
-        width: 50%;
-        font-size: 12px;
-    }
-
-    .coupon-btn {
-        width: 50%;
-    }
-
-    .coupon-btn:hover {
-        background-color: #e55a73;
-    }
-
-    .info-footer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        height: auto;
-        padding: 20px 40px;
-    }
-
-    .info-column-footer {
-        width: calc(50% - 15px);
-        height: auto;
-        padding: 0 0 20px 0;
-        border-bottom: none;
-    }
-
-    .info-column-footer img{
-        margin-bottom: 10px;
-    }
-
-    .info-column-footer a{
-        font-size: 15px;
-    }
-
-    .info-column-footer a:nth-of-type(1){
-        padding-top: 0;
-    }
-
-    .social-icons-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        overflow: hidden;
-    }
-
-    .social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 55px;
-        width: auto;
-        background: none;
-        border: 1px solid #868282;
-        color: white;
-        text-decoration: none;
-        position: relative;
-        overflow: hidden;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .social-link:first-child {
-        padding-top: 6px !important;
-    }
-
-    .social-link img {
-        width: 25px;
-        height: 25px;
-        display: block;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-    }
-
-    .social-link:hover {
-        background-color: #fff;
-    }
-
-    .social-link:hover img {
-        transform: none;
+    .img-footer-logo{
+        margin-bottom: 30px;
     }
 }

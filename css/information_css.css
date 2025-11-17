@@ -150,6 +150,30 @@
     }
 }
 
+@media (max-width: 767px){
+    .dad_information{
+        width: 100%;
+        padding: 20px 24px;
+    }
+
+    .information{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rigth-advice{
+        padding-left: 0;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .left-advice.mobile-view{
+        border-right: none;
+        border-bottom: 1px solid #efefef;
+        padding-right: 0;
+    }
+}
+
 @media (max-width: 425px){
     .dad_information{
         width: 100%;
@@ -158,7 +182,7 @@
 
     .information{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     }
 
     .left-advice{

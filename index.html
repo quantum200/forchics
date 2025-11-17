@@ -24,9 +24,7 @@
     <link rel="stylesheet" href="css/proposal_css.css">
     <link rel="stylesheet" href="css/carousel_css.css">
     <link rel="stylesheet" href="css/reviews_css.css">
-    <link rel="stylesheet" href="css/filters_css.css">
     <link rel="stylesheet" href="css/comment_css.css">
-    <link rel="stylesheet" href="css/pagination_css.css">
     <link rel="stylesheet" href="css/try-block_css.css">
     <link rel="stylesheet" href="css/icon-row_css.css">
     <link rel="stylesheet" href="css/footer_css.css">
@@ -70,24 +68,19 @@
 
 
 <div class="header-nav">
-    <button class = "header-nav-button desktop-view">МАГАЗИН</button>
     <img src="assets/menu.png" class="header-nav-img mobile-view">
     <img src="assets/logosite.png" class="header-logo">
     <div class = "login">
-        <img src="assets/user.png" class = "login-img mobile-view">
         <img src="assets/bag.png" class = "login-img">
     </div>
 </div>
 
 <div class="banner-info">
     <span class = "span-header-banner desktop-view">
-        <span class="item"><img src = "assets/truck.png"> Безкоштовна доставка сьогодні</span>
-        <span class="item"><img src = "assets/heart.png"> 72,500+ щасливих красунь</span>
+        <span class="item-header"><img src = "assets/truck.png"> Безкоштовна доставка сьогодні</span>
+        <span class="item-header"><img src = "assets/heart.png"> 72,500+ щасливих красунь</span>
     </span>
-
-    <span class="span-header-banner mobile-view">
-            БЕЗКОШТОВНА доставка зі складу у США
-    </span>
+    <span class="span-header-banner mobile-view">БЕЗКОШТОВНА доставка зі складу у США</span>
 </div>
 
 <main>
@@ -299,14 +292,14 @@
             <p>Сироватка для росту брів ForChics містить 100% натуральні
                 <br> інгредієнти з революційною дією, що сприяють росту густих
                 <br>і здорових брів.</p>
-            <a href="#">Дивитися повний список інгредієнтів</a>
+            <a href="#dad_faq">Дивитися повний список інгредієнтів</a>
         </div>
         <div class = "left-advice mobile-view">
             <h2>Науково Доведені Активні Інгредієнти</h2>
             <p>Сироватка для росту брів ForChics містить 100% натуральні
                 інгредієнти з революційною дією, що сприяють росту густих
                і здорових брів.</p>
-            <a href="#">Дивитися повний список інгредієнтів</a>
+            <a href="#dad_faq">Дивитися повний список інгредієнтів</a>
         </div>
 
 
@@ -474,7 +467,7 @@
 </div>
 
 
-<div class = "dad_faq">
+<div class = "dad_faq" id = "dad_faq">
     <div class = "faq">
         <p class = "faq-p">Часті запитання</p>
         <div class="faq-item">
@@ -829,12 +822,6 @@
                 </div>
             </div>
         </div>
-        <div class = "button-reviews">
-            <button class="write-review-btn">
-                <span class="icon-pencil">✏️</span>
-                <span class="text">Написати відгук</span>
-            </button>
-        </div>
         <div class="tab-reviews">
             <div class="tab-content-wrapper">
                 <div class="tab-item active">
@@ -846,88 +833,6 @@
     </div>
 </div>
 
-
-<div class="dad_filters">
-    <div class="filters">
-
-        <div class = "more-filters mobile-view">
-            <p class="filter-heading-mobile">Фільтрувати відгуки:</p>
-            <button class="more-filters-btn mobile-view">
-                <span class="icon-filters">⛭</span>
-                <span class="text">Більше фільтрів</span>
-            </button>
-        </div>
-
-        <p class="filter-heading">Фільтрувати відгуки:</p>
-
-        <div class="filters-collapsible" id="filters-content">
-            <div class="filter-tags">
-                <button class="filter-tag">Брови</button>
-                <button class="filter-tag">Результати</button>
-                <button class="filter-tag">Сироватка</button>
-                <button class="filter-tag">Зростання</button>
-                <button class="filter-tag">Різниця</button>
-                <button class="filter-tag">Волосся</button>
-                <button class="filter-tag">Вії</button>
-                <button class="filter-tag">Пляшка</button>
-                <button class="filter-tag">Forchics</button>
-                <button class="filter-tag">Трубка</button>
-            </div>
-
-            <div class="filter-selects">
-                <select class="filter-select">
-                    <option>Як ви оцінюєте ефективність?</option>
-                    <option>Погано</option>
-                    <option>Погано</option>
-                    <option>Задовільно</option>
-                    <option>Добре</option>
-                    <option>Дуже добре</option>
-                    <option>Відмінно</option>
-                </select>
-                <select class="filter-select">
-                    <option>Як би ви оцінили швидкість отримання результатів?</option>
-                    <option>Погано</option>
-                    <option>Погано</option>
-                    <option>Задовільно</option>
-                    <option>Добре</option>
-                    <option>Дуже добре</option>
-                    <option>Відмінно</option>
-                </select>
-                <select class="filter-select">
-                    <option>Вік</option>
-                    <option>Меньше 18</option>
-                    <option>18 - 24</option>
-                    <option>25 - 34</option>
-                    <option>35 - 44</option>
-                    <option>45 - 54</option>
-                    <option>55 - 64</option>
-                    <option>65+</option>
-                </select>
-                <select class="filter-select">
-                    <option>Що турбує</option>
-                    <option>Ламкі Вій</option>
-                    <option>Перевищипані Брови</option>
-                    <option>Рідкі Брови</option>
-                    <option>Короткі Вії</option>
-                    <option>Витончення Волосся</option>
-                    <option>Лисини</option>
-                    <option>Суха Шкіра</option>
-                    <option>Випадання волосся внаслідок медичного лікування</option>
-                    <option>Випадання волосся внаслідок гормональних змін</option>
-                </select>
-                <select class="filter-sort">
-                    <option>Останні</option>
-                    <option>Сортувати</option>
-                    <option>За Фотографіями</option>
-                    <option>Найсвіжіші</option>
-                    <option>Найвища Оцінка</option>
-                    <option>Найнижча Оцінка</option>
-                    <option>Найкорисніші</option>
-                </select>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="dad_comment">
     <div class="comment">
@@ -1250,26 +1155,6 @@
 </div>
 
 
-<div class = "pagination">
-    <div class="pagination-wrapper">
-        <ul class="pagination-list">
-            <li class="page-arrow prev-page disabled">&lt;</li>
-            <li class="page-number active">1</li>
-            <li class="page-number">2</li>
-            <li class="page-number">3</li>
-            <li class="page-number">4</li>
-            <li class="page-number">5</li>
-            <li class="page-number">6</li>
-            <li class="page-number">7</li>
-            <li class="page-number">8</li>
-            <li class="page-number">9</li>
-            <li class="page-number">10</li>
-            <li class="page-arrow next-page">&gt;</li>
-        </ul>
-    </div>
-</div>
-
-
 <div class="try-block">
     <div class="try">
         <h3>Спробуйте нас без ризику</h3>
@@ -1312,55 +1197,13 @@
 
 <footer>
     <div class = "footer-block">
-        <div class = "title-footer">
-            <h2>Отримайте 10% знижки на перше замовлення</h2>
-            <p>Давайте не ускладнювати.
-                Тільки необхідні новини та оновлення, а також 10% знижка на перше замовлення.
-            </p>
-            <form class="subscribe-form" action="#">
-                <input type="email" placeholder="Email Address" required>
-                <button type="submit" class="coupon-btn">ОТРИМАЙТЕ СВІЙ КУПОН</button>
-            </form>
+        <div class = "image">
+            <img src="assets/logosite.png" class="img-footer-logo">
         </div>
-        <div class = "info-footer">
-            <div class = "info-column-footer">
-                <img src="assets/footer-page.webp">
-                <p>ForChics прагне створювати продумані, сучасні засоби для догляду за волоссям,
-                    які допомагають підкреслити та підкреслити природну красу.</p>
-            </div>
-            <div class = "info-column-footer">
-                <h3>Питання щодо магазину</h3>
-                <a href="#">Сироватка для зміцнення вій</a>
-                <a href="#">Сироватка для покращення брів</a>
-                <a href="#">Туш для вій «Краще, ніж накладні»</a>
-                <a href="#">Комплексні пропозиції</a>
-            </div>
-            <div class = "info-column-footer">
-                <h3>Перегляньте нас!</h3>
-                <a href="#">Наша історія</a>
-                <a href="#">Відгуки</a>
-                <a href="#">Блог</a>
-                <a href="#">Програма для авторів контенту</a>
-            </div>
-            <div class = "info-column-footer">
-                <h3>Потрібна допомога?</h3>
-                <a href="#">Гарантія зростання</a>
-                <a href="#">Відстежуйте своє замовлення</a>
-                <a href="#">Зв'яжіться з нами</a>
-                <a href="#">Часті питання</a>
-                <a href="#">Доставка</a>
-                <a href="#">Повернення та обмін</a>
-            </div>
-            <div class="info-column-footer">
-                <h3>Соціальні мережі ForChics</h3>
-                <div class="social-icons-wrapper">
-                    <a href="#" class="social-link"><img src="assets/facebook.png"></a>
-                    <a href="#" class="social-link"><img src="assets/pinterest.png"></a>
-                    <a href="#" class="social-link"><img src="assets/instagram.png"></a>
-                    <a href="#" class="social-link"><img src="assets/youtube.png"></a>
-                    <a href="#" class="social-link"><img src="assets/snapchat.png"></a>
-                </div>
-            </div>
+        <div class = "info-footer-block">
+            <p class = "footer-links">Політики</p>
+            <a href="https://creamy-fabrics.shop/privacy.html" class = "footer-links">Політика конфіденційності</a>
+            <a href="https://creamy-fabrics.shop/terms.html" class = "footer-links">Публічна угода</a>
         </div>
     </div>
 </footer>

@@ -98,7 +98,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 585px) {
     .icon-row{
         padding: 24px;
     }

@@ -142,7 +142,7 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 560px){
     .try-block{
         width: 100%;
         padding: 35px 24px;

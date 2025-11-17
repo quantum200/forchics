@@ -148,6 +148,39 @@
     margin-left: 10px;
 }
 
+@media (max-width: 2560px){
+    .chart-bars {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .chart-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px){
+    .chart-bars {
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .chart-column {
+        width: auto;
+    }
+}
+
+@media (max-width: 1170px){
+    .chart-bars {
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .chart-column {
+        width: auto;
+    }
+}
+
 @media (max-width: 1024px){
     .dad_proposal{
         justify-content: flex-start;
