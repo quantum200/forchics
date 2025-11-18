@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let cartCount = 0;
-    const itemPrice = 22;
-    const itemOldPrice = 39;
+    const itemPrice = 795;
+    const itemOldPrice = 1145;
 
     const closeAllModals = () => {
         cartModal.style.display = 'none';
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const newTotal = quantity * itemPrice;
         const newOldTotal = quantity * itemOldPrice;
 
-        if (currentTotalSpan) currentTotalSpan.textContent = `$${newTotal}`;
-        if (oldTotalSpan) oldTotalSpan.textContent = `$${newOldTotal}`;
+        if (currentTotalSpan) currentTotalSpan.textContent = `${newTotal} грн`;
+        if (oldTotalSpan) oldTotalSpan.textContent = `${newOldTotal} грн`;
 
         if (cartCountSpan) cartCountSpan.textContent = quantity;
 
@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const currentPrice = itemClone.querySelector('.current-price');
 
             qtyInput.value = quantity;
-            oldPrice.textContent = `$${quantity * itemOldPrice}`;
-            currentPrice.textContent = `$${quantity * itemPrice}`;
+            oldPrice.textContent = `${quantity * itemOldPrice} грн`;
+            currentPrice.textContent = `${quantity * itemPrice} грн`;
 
             cartItemsContainer.appendChild(itemClone);
         }
