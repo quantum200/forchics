@@ -74,7 +74,7 @@
 }
 
 .chart-price {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.1;
 }
@@ -167,6 +167,10 @@
 
     .chart-column {
         width: auto;
+    }
+
+    .chart-price{
+        font-size: 20px;
     }
 }
 
